@@ -1,0 +1,133 @@
+/*---------------------------
+ CSS Index  
+****************************
+
+01. Variables
+02. Typography
+03. Spacing
+04. Reset
+05. Forms
+06. Shortcode
+07. Common
+08. Animations
+09. Text Animation
+10. Sal
+11. Header
+12. Nav
+13. Mobilemenu
+14. One Page
+15. Notification
+16. Blog
+17. Sidebar
+18. Blog Details
+19. Button
+20. Backtotop
+21. Cursor
+22. Accordion
+23. Section Title
+24. Banner
+25. About
+26. Service
+27. Contact Form
+28. Wallet
+29. Contact
+30. Author
+31. Collection
+32. Footer
+33. Copyright
+34. Portfolio
+35. Product Details
+36. Swicher
+37. Social Share
+38. Modal
+39. Activity
+40. Privacy
+41. Masonryitem
+42. Breadcrumb
+43. Slick
+44. Countdown
+45. Coming Soon
+46. Uploadmodal
+47. Upload Variants
+48. Upcoming Projects
+49. Ranking
+50. Notfound
+51. create collection
+52. newsletter
+53. Forum & community
+53. Feature
+54. White Version
+----------------------------*/
+
+/* Default  */
+
+@import'default/variables';
+@import'default/typography';
+@import'default/spacing';
+@import'default/reset';
+@import'default/forms';
+@import'default/mixins';
+@import'default/shortcode';
+@import'default/common';
+@import'default/animations';
+@import'default/text-animation';
+@import'default/sal';
+
+/* Header  */
+@import'header/header';
+@import'header/nav';
+@import'header/mobilemenu';
+@import'header/one-page';
+@import'header/notification';
+@import'header/mainheader';
+
+
+/* Blog  */
+
+@import'blog/blog';
+@import'blog/sidebar';
+@import'blog/blog-details';
+
+/* Elements  */
+@import'elements/button';
+@import'elements/backtotop';
+@import'elements/cursor';
+@import'elements/accordion';
+@import'elements/section-title';
+@import'elements/banner';
+@import'elements/about';
+@import'elements/service';
+@import'elements/contact-form';
+@import'elements/wallet';
+@import'elements/contact';
+@import'elements/author';
+@import'elements/collection';
+@import'elements/footer';
+@import'elements/copyright';
+@import'elements/portfolio';
+@import'elements/product-details';
+@import'elements/swicher';
+@import'elements/social-share';
+@import'elements/modal';
+@import'elements/activity';
+@import'elements/privacy';
+@import'elements/masonryitem';
+@import'elements/breadcrumb';
+@import'elements/slick';
+@import'elements/countdown';
+@import'elements/coming-soon';
+@import'elements/uploadmodal';
+@import'elements/upload-variants';
+@import'elements/upcoming-projects';
+@import'elements/ranking';
+@import'elements/notfound';
+@import'elements/edit-profile';
+@import'elements/savepopup';
+@import'elements/category';
+@import'elements/vedio';
+@import'elements/subscribe';
+@import'elements/create-collection';
+@import'elements/newsletter';
+@import'elements/forum';
+@import'elements/feature';
+@import'elements/white-version';

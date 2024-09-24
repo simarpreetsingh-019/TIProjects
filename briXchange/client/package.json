@@ -1,0 +1,45 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@anon-aadhaar/core": "^2.4.0",
+    "@anon-aadhaar/react": "^2.4.0",
+    "@catalogfi/wallets": "^0.2.47",
+    "@emotion/react": "^11.13.0",
+    "@emotion/styled": "^11.13.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@gardenfi/core": "^0.1.15",
+    "@gardenfi/orderbook": "^0.1.11",
+    "@mui/icons-material": "^5.16.7",
+    "@mui/material": "^5.16.7",
+    "@tailwindcss/forms": "^0.5.7",
+    "axios": "^1.4.0",
+    "connectkit": "^1.8.2",
+    "dotenv": "^16.4.5",
+    "ethers": "^5.7.2",
+    "flowbite-react": "^0.10.1",
+    "next": "13.4.1",
+    "react": "18.2.0",
+    "react-countdown": "^2.3.5",
+    "react-dom": "18.2.0",
+    "react-hot-toast": "^2.4.1",
+    "react-router-dom": "^6.26.0",
+    "viem": "^2.19.3",
+    "wagmi": "^2.12.5",
+    "web3": "^4.11.1",
+    "web3modal": "^1.9.5"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.41",
+    "tailwindcss": "^3.4.9"
+  }
+}

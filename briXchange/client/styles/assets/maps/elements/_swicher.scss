@@ -1,0 +1,226 @@
+/*--------------------------
+    Swicher Styles  
+----------------------------*/
+
+
+.active-dark-mode .my_switcher ul li .setColor.dark {
+    display: none;
+}
+.active-light-mode .my_switcher ul li .setColor.light {
+    display: none;
+}
+
+
+
+.active-light-mode .my_switcher ul li a.dark img {
+    display: block;
+}
+
+
+.my_switcher ul li a.dark img {
+    display: none;
+    filter: brightness(100);
+}
+
+
+
+.active-light-mode .my_switcher ul li a.dark img {
+    filter: brightness(0);
+}
+
+.my_switcher {
+    border: 0 none;
+    padding: 0;
+    width: 40px;
+    background: var(--color-secondary);
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    align-items: center;
+    border-radius: 100%;
+    border: 1px solid var(--color-border);
+    transition: 0.4s;
+    
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        border-radius: 100%;
+        li {
+            margin-top: 0;
+            margin-bottom: 0;
+            a {
+                display: block;
+                position: relative;
+                z-index: 2;
+                background: var(--color-secondary);
+                width: 40px;
+                height: 40px;
+                border-radius: 100%;
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    background: var(--background-color-1);
+                    top: 0;
+                    left: 0;
+                    transform: scale(0.5);
+                    opacity: 0;
+                    border-radius: 100%;
+                    transition: 0.3s;
+                    z-index: -1;
+                }
+                &:hover {
+                    border-color: transparent;
+                    &::after {
+                        transform: scale(1);
+                        opacity: 1;
+                    }
+                }
+
+                img {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    filter: brightness(0.5);
+                    max-height: 16px;
+                }
+                &.active {
+                    display: none;
+                }
+            }
+        }
+    }
+    &:hover {
+        border-color: transparent;
+    }
+}
+
+
+
+.rn-slick-dot-style {
+    .slick-dots {
+        bottom: -9;
+    }
+}
+
+
+
+
+
+.preloader {
+    background: #ffffff;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 9999999;
+  }
+  
+  @keyframes bgg {
+    0% {
+      background: var(--color-primary-light);
+    }
+    50% {
+      background: var(--color-primary);
+    }
+    100% {
+      background: var(--color-primary);
+    }
+  }
+  .loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 70px;
+    height: 70px;
+    margin: auto;
+  }
+  
+  .loader .circle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    transform: rotate(225deg);
+    animation-iteration-count: infinite;
+    animation-name: orbit;
+    animation-duration: 5.5s;
+    left: 3px;
+    top: -5px;
+  }
+  
+  .loader .circle:after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    animation: bgg 1500ms ease-in alternate infinite;
+  }
+  
+  .loader .circle:nth-child(2) {
+    animation-delay: 240ms;
+  }
+  
+  .loader .circle:nth-child(3) {
+    animation-delay: 480ms;
+  }
+  
+  .loader .circle:nth-child(4) {
+    animation-delay: 720ms;
+  }
+  
+  .loader .circle:nth-child(5) {
+    animation-delay: 960ms;
+  }
+  
+  @keyframes orbit {
+    0% {
+      transform: rotate(225deg);
+      opacity: 1;
+      animation-timing-function: ease-out;
+    }
+    7% {
+      transform: rotate(345deg);
+      animation-timing-function: linear;
+    }
+    30% {
+      transform: rotate(455deg);
+      animation-timing-function: ease-in-out;
+    }
+    39% {
+      transform: rotate(690deg);
+      animation-timing-function: linear;
+    }
+    70% {
+      transform: rotate(815deg);
+      opacity: 1;
+      animation-timing-function: ease-out;
+    }
+    75% {
+      transform: rotate(945deg);
+      animation-timing-function: ease-out;
+    }
+    76% {
+      transform: rotate(945deg);
+      opacity: 0;
+    }
+    100% {
+      transform: rotate(945deg);
+      opacity: 0;
+    }
+  }
+
+
+

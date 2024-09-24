@@ -1,0 +1,198 @@
+.single-activity-wrapper {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: var(--background-color-1);
+    border-radius: 5px;
+    position: relative;
+
+    .thumbnail {
+        overflow: hidden;
+        border-radius: 5px;
+        a {
+            display: block;
+            overflow: hidden;
+            img {
+                transition: 0.4s;
+            }
+        }
+    }
+    .inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .read-content {
+            display: flex;
+            align-items: center;
+
+            @media #{$large-mobile} {
+                display: block;
+            }
+
+            img {
+                @media #{$large-mobile} {
+                    width: 100%;
+                }
+            }
+
+        }
+
+        .icone-area {
+            svg {
+                width: 30px;
+                height: auto;
+                color: var(--color-primary);
+                margin-right: 10px;
+                stroke-width: 1.5px;
+            }
+
+            @media #{$large-mobile} {
+                position: absolute;
+                top: 50px;
+                left: 50px;
+            }
+        }
+
+        .content {
+            margin-left: 20px;
+            @media #{$large-mobile} {
+                margin-left: 0;
+                margin-top: 20px;
+            }
+            h6 {
+                &.title {
+                    margin-bottom: 10px;
+                }
+            }
+
+            p {
+                margin-bottom: 5px;
+                font-size: 20px;
+                color: #7f859d;
+
+                @media #{$large-mobile} {
+                    margin-bottom: 20px;
+                    padding-right: 15px;
+                }
+
+                @media #{$small-mobile} {
+                    margin-bottom: 10px;
+                    padding-right: 7px;
+                    font-size: 18px;
+                    line-height: 27px;
+                }
+
+                span {
+                    color: var(--color-primary);
+                }
+            }
+
+            .time-maintane {
+                display: flex;
+
+                @media #{$large-mobile} {
+                    flex-direction: column;
+                }
+
+                .time {
+                    margin-right: 10px;
+                }
+
+                .data {
+                    display: flex;
+                    align-items: center;
+
+                    @media #{$large-mobile} {
+                        margin-bottom: 7px;
+                    }
+
+                    svg {
+                        width: 18px;
+                        height: auto;
+                        margin-right: 7px;
+                    }
+
+                    a {
+                        color: var(--color-body);
+
+                        &:hover {
+                            color: var(--color-primary);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &:hover {
+        .thumbnail {
+            a {
+                img {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+.mb_dec--15 {
+    margin-bottom: -15px;
+}
+
+.activity-direction {
+    @media #{$md-layout} {
+        flex-direction: column-reverse;
+    }
+
+    @media #{$sm-layout} {
+        flex-direction: column-reverse;
+    }
+}
+
+
+.filter-wrapper {
+    height: 100%;
+
+    .sing-filter {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: -15px;
+        margin-right: -15px;
+
+        button {
+            display: inline-block;
+            padding: 10px 15px;
+            background: var(--background-color-1);
+            cursor: pointer;
+            margin-right: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            transition: var(--transition);
+            font-size: 16px;
+            max-width: fit-content;
+
+            &:hover {
+                background: var(--color-primary-alta);
+                color: var(--color-white);
+            }
+
+            &:focus {
+                background: var(--color-primary-alta);
+                color: var(--color-white);
+            }
+        }
+    }
+}
+
+.widge-wrapper {
+    position: sticky;
+    z-index: 10;
+
+    .inner {
+        margin-bottom: 30px;
+    }
+
+    h3 {
+        font-weight: 500;
+        font-size: 18px;
+    }
+}

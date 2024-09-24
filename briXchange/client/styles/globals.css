@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("./assets/css/plugins/feature.css");
+@import url("./assets/css/plugins/jquery-ui.min.css");
+@import url("./assets/css/vendor/bootstrap.min.css");
+@import url("./assets/css/vendor/nice-select.css");
+@import url("./assets/css/vendor/odometer.css");
+@import url("./assets/css/vendor/slick-theme.css");
+@import url("./assets/css/vendor/slick.css");
+@import url("./assets/css/style.css");
+@import url("./assets/css/GardenStyles.css");
+
+/* ??LOADER */
+.custom-loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(1, 0, 0, 0.259); /* semi-transparent white */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-loader {
+  border: 16px solid #21212138; /* Light grey */
+  border-top: 16px solid #00a3ff; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* END LOADER */

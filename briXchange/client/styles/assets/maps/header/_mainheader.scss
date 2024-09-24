@@ -1,0 +1,69 @@
+/*---------------------------
+    Main Header Styles 
+----------------------------*/
+
+.rn-header {
+    position: relative;
+    z-index: 999;
+    width: 100%;
+    border-bottom: 1px solid #ffffff14;
+    transition: 0.5s;
+
+    .logo-thumbnail {
+        padding-right: 32px;
+        position: relative;
+        margin-right: 17px;
+        @media #{$small-mobile} {
+            padding-right: 0;
+            margin-right: 0;
+        }
+        &::after {
+            background: var(--color-border);
+            width: 1px;
+            height: 36px;
+            position: absolute;
+            content: "";
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            @media #{$small-mobile} {
+                display: none;
+            }
+        }
+    }
+
+    &.header--sticky {
+        position: sticky !important;
+        top: 0;
+        z-index: 999;
+        width: 100%;
+        backdrop-filter: blur(10px);
+    }
+
+    &.sticky {
+        background-color: #1515218c;
+        position: sticky !important;
+        top: 0;
+        display: block;
+        box-shadow: var(--shadow-1);
+    }
+
+    &.rn-header-four{
+        &.header--fixed{
+            &.sticky{
+                top: 0;
+            }
+        }
+    }
+
+    &.header--transparent {
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: auto;
+        z-index: 999;
+        border-bottom: 1px solid #ffffff14;
+    }
+}
+
+

@@ -1,0 +1,323 @@
+:root {
+    --primary-color: #00a3ff;
+    --secondary-color: #fafafa;
+    --primary-radius: 10px;
+    --secondary-radius: 5px;
+    --placeholder-color: #fafafa;
+    --border-color: #27272a;
+    --light-text-color: #fafafa;
+    --font-size: 14px;
+  
+    font-family: "Inter", sans-serif;
+    color: #fafafa;
+  }
+
+  #container {
+    width: 100vw;
+    padding: 0px 30px 0px 80px;
+    display: flex;
+    justify-content: center;
+    gap: 4.6rem;
+  }
+  
+  /* ------------ Button Start ------------ */
+  
+  button {
+    font-family: inherit;
+    font-weight: 500;
+    border: none;
+    border-radius: var(--secondary-radius);
+    cursor: pointer;
+  }
+  
+  .button-black {
+    font-family: inherit;
+    font-size: 13.25px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: var(--secondary-radius);
+    padding: 10px 20px;
+    padding: 10px 20px;
+    font-size: 13.25px;
+  }
+  
+  .button-white {
+    background: var(--secondary-color);
+    border: none;
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+  
+  .input-component button {
+    font-size: var(--font-size);
+    background-color: var(--border-color);
+    padding: 6px 6px;
+    color: var(--secondary-color);
+    width: 80px;
+    cursor: default;
+  }
+  
+  /* ------------ Buttons End ------------ */
+  
+  /* ------------ Input Start ------------ */
+  
+  input {
+    width: 100%;
+    height: 35px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: inherit;
+    padding: 9px 11px;
+    border: 1px solid var(--border-color);
+    font-size: 14px;
+    border-radius: var(--secondary-radius);
+  }
+  
+  /* ------------ Input End ------------ */
+  
+  /* ------------ Label Start ------------ */
+  
+  label {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  /* ------------ Label End ------------ */
+  
+  /* ------------ Container Start ------------ */
+  
+  #container {
+    width: 100vw;
+    /* padding: 0px 30px 0px 80px; */
+    display: flex;
+    justify-content: center;
+    gap: 4.6rem;
+  }
+  
+  /* ------------ Container End ------------ */
+  
+  /* ------------ Balances Component Start ------------ */
+  
+  .balances {
+    display:flex;
+    flex-direction: row;
+    gap: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .balances > * {
+    padding: 8px;
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    border: transparent;
+    border-radius: var(--secondary-radius);
+  }
+  
+  /* ------------ Balances Component End ------------ */
+  
+  /* ------------ Swap Component Start ------------ */
+  
+  .swap-component {
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    color: #09090b;
+    border-radius: var(--primary-radius);
+    width: 30%;
+    padding: 26px 24px 26px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .swap-component-top-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .swap-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .button-black:hover {
+    background-color: #27272a;
+  }
+  
+  hr {
+    width: 100%;
+    border-color: var(--border-color);
+    margin-top: 1.125rem;
+    margin-bottom: 1.125rem;
+  }
+  
+  .swap-component-middle-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.625rem;
+    width: 100%;
+  }
+  
+  .swap-component-middle-section > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .input-component {
+    display: flex;
+    gap: 11px;
+  }
+  
+  .input-component input {
+    -moz-appearance: textfield;
+    appearance: textfield;
+  }
+  
+  .swap-component-bottom-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+  }
+  
+  .swap-component-bottom-section div {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-size);
+    font-weight: 500;
+    gap: 8px;
+  }
+  
+  /* ------------ Swap Component End ------------ */
+  
+  /* ------------ Transaction Component Start ------------ */
+  
+  .transaction-component {
+    background-color:transparent;
+    color: #09090b;
+    border-radius: var(--primary-radius);
+    min-width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .order {
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    color: #09090b;
+    border-radius: var(--primary-radius);
+    padding-top: 17px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .order-id {
+    padding-left: 1rem;
+    font-size: 16px;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .order-id .enlarge svg {
+    height: 1rem;
+    cursor: pointer;
+  }
+  
+  .amount-and-status {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    color: #09090b;
+  }
+  
+  .amount-and-status * {
+    text-align: center;
+  }
+  
+  .amount-label,
+  .status-label {
+    padding: 5px;
+    font-size: var(--font-size);
+    color: #09090b;
+  }
+  
+  .amount-label {
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+  }
+  
+  .status-label {
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .amount {
+    font-size: 20px;
+    align-self: stretch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid var(--border-color);
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+  
+  .status {
+    max-width: 125px;
+    font-size: 14px;
+    padding: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .status button {
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+  
+  .pop-up-container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #09090baa;
+  }
+  
+  .pop-up {
+    border: 1px solid var(--border-color);
+    border-radius: var(--primary-radius);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    background-color: var(--primary-color);
+    gap: 1.6rem;
+  }
+  
+  .pop-up > span {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+  
+  .pop-up-label {
+    color: var(--light-text-color);
+    font-size: 1rem;
+  }
+  
+  /* ------------ Transaction Component End ------------ */
+  
