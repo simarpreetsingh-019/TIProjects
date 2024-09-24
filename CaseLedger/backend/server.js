@@ -69,7 +69,7 @@ app.post('/ocr', upload.single('image'), async (req, res) => {
 
   try {
     const ocrResult = await ocrSpace(filePath, {
-      apiKey: 'K82107326988957',
+      apiKey: 'xxxxxxxx',
       language: 'eng',
     });
 
