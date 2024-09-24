@@ -4,7 +4,7 @@ import MapDisplay from "../miniComponents/MapDisplay";
 import ShareAccess from "./ShareAccess";
 import './global.js';
 
-const userPrivateKey = 'f423a224907d18a0f6d60989b37562d6c0d14cbbea52898a2cd94786cee0deae';
+const userPrivateKey = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';  // Replace with your private key
 
 const SecureDisplay = ({ state }) => {
     const { account, contract, signer } = state;

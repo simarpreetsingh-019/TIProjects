@@ -60,9 +60,9 @@ const UploadCase = ({ state }) => {
       uniqueCaseID: caseName + hashedCaseID,
     };
 
-    const userPrivateKey = "f423a224907d18a0f6d60989b37562d6c0d14cbbea52898a2cd94786cee0deae";
-    const IPFS_Key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mb3JtYXRpb24iOnsiaWQiOiJkMzE0OTYzZC02MzUzLTQ4Y2QtOTRlMC1lODdiOTM3NjUwZGIiLCJlbWFpbCI6ImpheWFyYWp2aXN3YW5hdGhhbkBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGluX3BvbGljeSI6eyJyZWdpb25zIjpbeyJpZCI6IkZSQTEiLCJkZXNpcmVkUmVwbGljYXRpb25Db3VudCI6MX0seyJpZCI6Ik5ZQzEiLCJkZXNpcmVkUmVwbGljYXRpb25Db3VudCI6MX1dLCJ2ZXJzaW9uIjoxfSwibWZhX2VuYWJsZWQiOmZhbHNlLCJzdGF0dXMiOiJBQ1RJVkUifSwiYXV0aGVudGljYXRpb25UeXBlIjoic2NvcGVkS2V5Iiwic2NvcGVkS2V5S2V5IjoiOTk5OTUxNDdhYjRlNjA5MjQ0ZDUiLCJzY29wZWRLZXlTZWNyZXQiOiJiODYxYjBiOWM5MGZhZmY4MzVjMjJiZDBjMzhkYmNmNmU3ZGZkYjgzNDBkYjFhMGYxNWU4OTU1YjNmZjc0YzdkIiwiaWF0IjoxNzA4OTUxMTQwfQ.P-4aV38dousYXc1rjTBTqjRg7WxgYZxMrlXKfv47ZPc";
-
+    const userPrivateKey = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';  // Replace with your private key
+    const IPFS_Key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";  // Replace with your IPFS key
+    
     const options = {
       method: "POST",
       headers: {
