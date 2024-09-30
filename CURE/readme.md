@@ -12,6 +12,8 @@
 ## Project Overview
 **CURE (Centralized User Registry for Experts)** is a health record management system built on the **Tezos blockchain**. It ensures secure and decentralized storage of health records, enabling patients to securely share their personal data with doctors. The system incorporates **AES** and **RSA encryption** for security and uses **IPFS** for decentralized file storage. The focus is on privacy, transparency, and interoperability of health data.
 
+[Watch the CURE Project Video](https://github.com/Tharaniesh3/TIProjects/blob/main/CURE/Cure.mp4)
+
 ## Features
 - **Tezos Blockchain Integration**: Ensures decentralized and immutable storage of patient and doctor data.
 - **AES and RSA Encryption**: Secure data storage and key sharing using industry-standard encryption algorithms.
