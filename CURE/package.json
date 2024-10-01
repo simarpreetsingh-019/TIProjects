@@ -1,0 +1,43 @@
+{
+  "name": "taquito-boilerplate-react",
+  "private": true,
+  "version": "0.2.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.8.2",
+    "@chatscope/chat-ui-kit-react": "^1.10.1",
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@pinata/sdk": "^2.1.0",
+    "@shadcn/ui": "^0.0.4",
+    "@taquito/beacon-wallet": "^17.0.0",
+    "@taquito/taquito": "^17.0.0",
+    "buffer": "^6.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "events": "^3.3.0",
+    "framer-motion": "^10.18.0",
+    "qrcode-generator": "^1.4.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.10.1",
+    "react-router-dom": "^6.15.0",
+    "stream-browserify": "^3.0.0",
+    "util": "^0.12.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.1",
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
+    "@vitejs/plugin-react-swc": "^3.3.2",
+    "nodemon": "^3.1.4",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.2"
+  }
+}
