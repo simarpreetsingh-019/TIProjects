@@ -1,0 +1,35 @@
+
+/* key feature style */
+.single-key{
+    background: var(--background-color-1);
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    text-align: center;
+    color: #ffffff;
+    padding: 36px 20px 36px 20px;
+    height: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: var(--transition);
+    height: 100%;
+    svg{
+        display: block;
+        height: 40px;
+        width: 40px;
+        stroke-width: 2px;
+        transition: var(--transition);
+    }
+    label{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 12px;
+        transition: var(--transition);
+    }
+    &:hover{
+        background: var(--color-primary);
+    }
+}

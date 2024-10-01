@@ -1,0 +1,23 @@
+//------ ranking----->
+
+
+
+tbody{
+    &.ranking{
+        tr{
+            td{
+                padding: 10px 25px !important;
+                vertical-align: middle !important;
+                .thumbnail{
+                    img{
+                        max-width: 60px;
+                        border-radius: 50%;
+                        margin-right: 10px;
+                        border: 2px solid var(--color-border);
+                        transition: var(--transition);
+                    }
+                }
+            }
+        }
+    }
+}
