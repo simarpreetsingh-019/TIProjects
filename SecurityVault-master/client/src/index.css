@@ -1,0 +1,37 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, rgb(168, 97, 255), #4b45ff, #61fffc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 400% 100%;
+  animation: gradientAnimation 20s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  position: relative;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: left;
+  }
+  25% {
+    background-position: 50% 50%;
+  }
+  50% {
+    background-position: right;
+  }
+  75% {
+    background-position: 50% 50%;
+  }
+  100% {
+    background-position: left;
+  }
+}

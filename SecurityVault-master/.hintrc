@@ -1,0 +1,9 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "detect-css-reflows/paint": "off",
+    "detect-css-reflows/composite": "off"
+  }
+}
