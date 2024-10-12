@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Rain Demo</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+	
+	<!-- Standardised web app manifest -->
+	<link rel="manifest" href="appmanifest.json" />
+	
+	<!-- Allow fullscreen mode on iOS devices. (These are Apple specific meta tags.) -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<link rel="apple-touch-icon" sizes="256x256" href="icon-256.png" />
+	<meta name="HandheldFriendly" content="true" />
+	
+	<!-- Chrome for Android web app tags -->
+	<meta name="mobile-web-app-capable" content="yes" />
+	<link rel="shortcut icon" sizes="256x256" href="icon-256.png" />
+	<link rel="stylesheet" href="style.css">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/6.13.2/ethers.umd.min.js"
+    type="application/javascript"></script>
+
+    <!-- All margins and padding must be zero for the canvas to fill the screen. -->
+	<style type="text/css">
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		html, body {
+			background: #000;
+			color: #fff;
+			touch-action: none;
+			-ms-touch-action: none;
+		}
+		canvas {
+			touch-action-delay: none;
+			touch-action: none;
+			-ms-touch-action: none;
+		}
+       
+    </style>
+	
+
+</head> 
+ 
+<body> 
+	<div id="fb-root"></div>
+    <div id="gameCodeContainer">
+	<div class="navBar">
+        <h4>Ghost Shooter</h4>
+        <h4 id="connectWallet">Connect Wallet</h4>
+    </div>
+	
+
+    <!-- NOTE Game's code start ##############################################################################################################################--> 
+
+    
+        <div class="gameCodeContainerNote">
+            <p>NOTE: If developer is testing this site, please clear the site data then refresh.<p>
+		    <p>To verify smart contract on etherlink test explorer <a href ="https://testnet.explorer.etherlink.com/address/0xF7bB7Edcb520C9ed005afa9Bbb6A6C416C80cBDD"> click here</a></p>
+        </div>
+        <script>
+            // Issue a warning if trying to preview an exported project on disk.
+            (function () {
+                // Check for running exported on file protocol
+                if (window.location.protocol.substr(0, 4) === "file") {
+                    alert("Exported games won't work until you upload them. (When running on the file:/// protocol, browsers block many features from working for security reasons.)");
+                }
+            })();
+        </script>
+
+        <div id="controlInstructions">
+            <p>Press Esc to pause/resume the game.</p>
+            <p>Controls: W,A,S,D for movement.</p>
+            <p>Aim with mouse and press Tab or click left mouse to fire.</p>
+            <p>After game is over click getTokens and the press enter to restart the game.</p>
+        </div>
+        
+        <!-- The canvas must be inside a div called c2canvasdiv -->
+       
+        <div id="c2canvasdiv">
+            <!-- The canvas the project will render to.  If you change its ID, don't forget to change the
+        		ID the runtime looks for in the jQuery events above (ready() and cr_sizeCanvas()). -->
+            <canvas id="c2canvas" width="800" height="600">
+                <!-- This text is displayed if the visitor's browser does not support HTML5.
+        			You can change it, but it is a good idea to link to a description of a browser
+        			and provide some links to download some popular HTML5-compatible browsers. -->
+                <h1>Your browser does not appear to support HTML5. Try upgrading your browser to the latest version. <a
+                        href="http://www.whatbrowser.org">What is a browser?</a>
+                    <br /><br /><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx">Microsoft Internet
+                        Explorer</a><br />
+                    <a href="http://www.mozilla.com/firefox/">Mozilla Firefox</a><br />
+                    <a href="http://www.google.com/chrome/">Google Chrome</a><br />
+                    <a href="http://www.apple.com/safari/download/">Apple Safari</a>
+                </h1>
+            </canvas>
+        </div>
+
+        
+        <!-- Pages load faster with scripts at the bottom -->
+        
+        <!-- Construct 2 exported games require jQuery. -->
+        <script src="jquery-2.1.1.min.js"></script>
+        
+        
+        
+        <!-- The runtime script.  You can rename it, but don't forget to rename the reference here as well.
+            This file will have been minified and obfuscated if you enabled "Minify script" during export. -->
+        <script src="c2runtime.js"></script>
+        
+        <script>
+            // Start the Construct 2 project running on window load.
+            jQuery(document).ready(function () {
+                // Create new runtime using the c2canvas
+                cr_createRuntime("c2canvas");
+            });
+
+            // Pause and resume on page becoming visible/invisible
+            function onVisibilityChanged() {
+                if (document.hidden || document.mozHidden || document.webkitHidden || document.msHidden)
+                    cr_setSuspended(true);
+                else
+                    cr_setSuspended(false);
+            };
+
+            document.addEventListener("visibilitychange", onVisibilityChanged, false);
+            document.addEventListener("mozvisibilitychange", onVisibilityChanged, false);
+            document.addEventListener("webkitvisibilitychange", onVisibilityChanged, false);
+            document.addEventListener("msvisibilitychange", onVisibilityChanged, false);
+
+            function OnRegisterSWError(e) {
+                console.warn("Failed to register service worker: ", e);
+            };
+
+            // Runtime calls this global method when ready to start caching (i.e. after startup).
+            // This registers the service worker which caches resources for offline support.
+            window.C2_RegisterSW = function C2_RegisterSW() {
+                if (!navigator.serviceWorker)
+                    return;		// no SW support, ignore call
+
+                try {
+                    navigator.serviceWorker.register("sw.js", { scope: "./" })
+                        .then(function (reg) {
+                            console.log("Registered service worker on " + reg.scope);
+                        })
+                        .catch(OnRegisterSWError);
+                }
+                catch (e) {
+                    OnRegisterSWError(e);
+                }
+            };
+        </script>
+    </div>
+
+    <!-- NOTE Game's code ENDS ##############################################################################################################################-->
+
+    <script>
+        // Sample data fetched from backend
+        const data = [{
+            name: "Card 1",
+            description: "This is the first card.",
+            funds_remaining: "funds1",
+            org_address: "address1"
+        }, {
+            name: "Card 2",
+            description: "This is the second card.",
+            funds_remaining: "funds2",
+            org_address: "address2"
+        }, {
+            name: "Card 3",
+            description: "This is the third card.",
+            funds_remaining: "funds3",
+            org_address: "address3"
+        }, {
+            name: "Card 3",
+            description: "This is the third card.",
+            funds_remaining: "funds3",
+            org_address: "address3"
+        }, {
+            name: "Card 3",
+            description: "This is the third card.",
+            funds_remaining: "funds3",
+            org_address: "address3"
+        }, {
+            name: "Card 3",
+            description: "This is the third card.",
+            funds_remaining: "funds3",
+            org_address: "address3"
+        }, {
+            name: "Card 3",
+            description: "This is the third card.",
+            funds_remaining: "funds3",
+            org_address: "address3"
+        }, {
+            name: "Card 3",
+            description: "This is the third card.",
+            funds_remaining: "funds3",
+            org_address: "address3"
+        }, {
+            name: "Card 3",
+            description: "This is the third card.",
+            funds_remaining: "funds3",
+            org_address: "address3"
+        }, {
+            name: "Card 3",
+            description: "This is the third card.",
+            funds_remaining: "funds3",
+            org_address: "address3"
+        }];
+
+        function createCard(cardData) {
+            const cardDiv = document.createElement('div');
+            cardDiv.classList.add('cardForTokens');
+
+            const leftPartDiv = document.createElement('div');
+            leftPartDiv.classList.add('leftPartOfCardForTokens');
+
+            const nameHeader = document.createElement('h4');
+            nameHeader.textContent = cardData.name;
+
+            const descriptionHeader = document.createElement('h3');
+            descriptionHeader.textContent = cardData.description;
+
+            const fundsHeader = document.createElement('h5');
+            fundsHeader.textContent = cardData.funds_remaining;
+
+            const addressHeader = document.createElement('h5');
+            addressHeader.textContent = cardData.org_address;
+
+            const rightPartDiv = document.createElement('div');
+            rightPartDiv.classList.add('rightPartOfCardForTokens');
+
+            const checkboxInput = document.createElement('input');
+            checkboxInput.setAttribute('type', 'checkbox');
+            checkboxInput.setAttribute('id', `checkbox${data.indexOf(cardData) + 1}`);
+            checkboxInput.setAttribute('name', `option${data.indexOf(cardData) + 1}`);
+            // checkboxInput.checked = cardData.checked === "true"; 
+            // Convert string to boolean
+
+            // Append elements
+            leftPartDiv.appendChild(nameHeader);
+            leftPartDiv.appendChild(descriptionHeader);
+            leftPartDiv.appendChild(fundsHeader);
+            leftPartDiv.appendChild(addressHeader);
+
+            rightPartDiv.appendChild(checkboxInput);
+
+            cardDiv.appendChild(leftPartDiv);
+            cardDiv.appendChild(rightPartDiv);
+
+            return cardDiv;
+        }
+
+
+
+        function renderCards(cardDataArray) {
+            const cardContainer = document.getElementById("mainContainerForTokenCards")
+            cardContainer.innerHTML = ''; // Clear existing cards
+
+            cardDataArray.forEach(cardData => {
+                const card = createCard(cardData);
+                cardContainer.appendChild(card);
+            });
+        }
+        // Simulate fetching data from backend
+        // In a real scenario, you would use fetch or XMLHttpRequest to get data from backend
+        document.addEventListener('DOMContentLoaded', () => {
+            renderCards(data);
+        });
+    </script>
+
+    <div id="mainContainerForTokenCards">
+        <!-- Here, cards will be rendered via the JS function. -->
+    </div>
+
+    <!-- ################################################## Accounts part ################################################## -->
+
+    <div id="accountsContainerWrapper">
+        <div class="accountsContainer">
+            <h1>Ghost Coins DApp</h1>
+
+            <div id="account"></div>
+
+            <h2>Check Balance</h2>
+            <button id="checkBalance" onclick="check_balance()">Check My Balance</button>
+            <div id="balance" style="color:#000"></div>
+
+            <h2>Donate to Organisation</h2>
+            <input type="text" id="orgAddress" placeholder="Organisation Address">
+            <input type="number" id="donationAmount" placeholder="Amount">
+            <button id="donate">Donate</button>
+
+            <h2>Get Tokens</h2>
+            <button id="getTokens">Get Tokens</button>
+            
+            <h2>Register Organisation</h2>
+            <input type="text" id="orgAdd" placeholder="org address">
+            <input type="text" id="orgName" placeholder="org name">
+            <input type="text" id="orgDescription" placeholder="org description">
+            <input type="number" id="orgRequiredFunds" placeholder="funds">
+            <button id="registerOrg" onclick="registerOrg()">Register Organisation</button>
+
+            <h2>Approve Organisation</h2>
+            <button id="approve">Approve (only for owner)</button>
+
+            <h2>Approve Organisation Public</h2>
+            <button id="approve_public_test">Approve (public , only for testing purpose)</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body> 
+</html> 
