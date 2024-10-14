@@ -1,0 +1,62 @@
+/* google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.App {
+  text-align: center;
+}
+.navbar {
+  min-height: 80px;
+  margin-top: -20px;
+  background-color: black;
+}
+.navbar-brand {
+  color: white;
+  padding-top: 20px;
+  font-size: 30px;
+  font-weight: 500;
+}
+.img-fluid {
+  height: 15rem !important;
+  width: 100% !important;
+}
+.form-inline {
+  margin-top: 17px !important;
+}
+.imgBox {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  border: 1px solid #3F729B;
+  margin-top: 10px;
+}
+
+.btn{
+  background-color: #9500ff;
+  color:#fff;
+  border-radius:10px;
+  width:190px;
+}
+
+.btn:hover{
+  background: transparent;
+  border-color:#000;
+  border-width:1px;
+  color:#000;
+}
+
+.btn1{
+  background-color: #9500ff;
+  color:#fff;
+  border-radius:10px;
+  width:190px;
+  border-width:1px;
+  border-style:solid;
+}
+
+.btn1:hover{
+  background-color: transparent;
+  color:#fff;
+  border-color:#fff;
+  border-width:1px;
+  border-style:solid;
+}

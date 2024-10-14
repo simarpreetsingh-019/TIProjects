@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "node": "^22.8.0",
+    "solc": "^0.8.27",
+    "truffle": "^5.11.5"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.10"
+  }
+}
