@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=The+Seasons&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <title>Warranty Details</title>
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="sidebar">
+            <h2>kraVen's Inventory</h2>
+            <ul>
+                <li><a href="#"><span class="material-symbols-outlined">in_home_mode</span>Home</a></li>
+                <li><a href="{% url 'marketwarranties' %}"><span class="material-symbols-outlined">receipt_long</span>Market Warranties</a></li>
+                <li><a href="{% url 'settings' %}"><span class="material-symbols-outlined">settings</span>Settings</a></li>
+                <li><a href="{% url 'profile' %}"><span class="material-symbols-outlined">person</span>Profile</a></li>
+                <li><a href="#"><span class="material-symbols-outlined">move_item</span>Logout</a></li>
+                <li><a href="{% url 'helpcenter' %}"><span class="material-symbols-outlined">help_center</span>Help Center</a></li>
+            </ul>
+        </div>
+        
+        <div class="main-content"> 
+            <div class="header">
+                <h3 class="welcome-message">Good Evening Boss(n)...</h3>
+            </div>
+
+            <div class="container">
+                {% for warranty in warranties %}
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="title">Your Product</p>
+                            <p>{{ warranty.product_name }}</p>
+                            
+                        </div>
+                        <div class="flip-card-back">
+                            <p class="title">Start Date: {{ warranty.warranty_start_date }}</p>
+                            <p>End Date: {{ warranty.warranty_end_date }}</p>
+                            <p>IMEI: {{ warranty.imei_number }}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+            <div class="expiring-warranties">
+                <h4>Warranties About to Expire</h4>
+                <div class="expiring-container container"> 
+                    {% if expiring_warranties %}
+                        {% for warranty in expiring_warranties %}
+                            <div class="expiring-card">
+                                <div class="expiring-card-inner">
+                                    <div class="expiring-card-front">
+                                        <p class="title">Warranty Details</p>
+                                        <p>{{ warranty.product_name }}</p>
+                                       
+                                    </div>
+                                    <div class="expiring-card-back">
+                                        <p class="title">End Date: {{ warranty.warranty_end_date }}</p>
+                                        <p>IMEI: {{ warranty.imei_number }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    {% else %}
+                        <p class="p-font">No warranties are about to expire.</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
