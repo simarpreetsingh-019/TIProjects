@@ -1,0 +1,28 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model bounties {
+  id           String   @id @default(auto()) @map("_id") @db.ObjectId
+  v            Int      @map("__v")
+  createdAt    DateTime @db.Date
+  description  String
+  difficulty   String
+  githubIssue  String
+  githubRepo   String
+  isLive       Boolean
+  oneLiner     String
+  paymentToken String
+  rewardAmount Int
+  title        String
+  updatedAt    DateTime @db.Date
+}
+
+model tasks {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+}
