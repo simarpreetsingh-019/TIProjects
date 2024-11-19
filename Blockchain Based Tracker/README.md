@@ -7,20 +7,13 @@ ZeroTrace is a blockchain-based tracking application using **Etherlink** smart c
 - **Blockchain**: Etherlink
 - **Contract Address**: [0xYourContractAddress](#)
 
-## Project Demo
-### Screenshots:
-![Screenshot1](path/to/screenshot1.png)
-![Screenshot2](path/to/screenshot2.png)
-
-### Demo Video:
-A small video showcasing the demo and the working of the project can be found [here](link-to-video).
 
 ## Team Name & Details
 - **Team Name**: Blockchain Pioneers
 - **Team Members**:
-  - Snega V
-  - Shreenidhi P
+  - Snega K
+  - Shreenidhi S
   - Sree Sahaana N
 ## Hackathon Details
-- **Hackathon Name**: [Hackathon Event Name]
-- **Hackathon Website**: [https://hackathon-website.com](https://hackathon-website.com)
+- **Hackathon Name**: Hack 7 days x CIT
+
