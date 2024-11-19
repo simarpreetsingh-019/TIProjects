@@ -1,6 +1,6 @@
 <p align="center"><img align="center" width="180" src="./frontend/src/assets/logo/DARK-logo.webp#gh-dark-mode-only"/></p>
 <p align="center"><img align="center" width="180" src="./frontend/src/assets/logo/LIGHT-logo.webp#gh-light-mode-only"/></p>
-<h3 align="center">A Comprehensive Blockchain Forensic Tool</h3>
+<h3 align="center">A Comprehensive Blockchain Forensic Tool - HackwithMAIT 5.0 Project</h3>
 <hr>
 
 A powerful blockchain forensic tool that combines Neo4j's graph visualization capabilities with machine learning-based anomaly detection to track and analyze suspicious transactions on the Tezos blockchain. Built for enhanced transparency and security in the crypto ecosystem.
