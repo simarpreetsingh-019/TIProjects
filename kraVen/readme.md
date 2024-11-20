@@ -46,8 +46,9 @@ KRAVEN is a decentralized platform designed to simplify the tracking, storing, a
 ---
 
 **Join us in revolutionizing warranty management!**
+![image](https://github.com/user-attachments/assets/ce93db1a-8fc9-48a0-9b07-c409f9336407)
+![image](https://github.com/user-attachments/assets/9b186b46-341d-4d39-9472-2f07f7b841a2)
 
-![image](https://github.com/user-attachments/assets/f7599b06-1f95-40af-9efd-840282bd48b1)
-![image](https://github.com/user-attachments/assets/adb4c76d-8545-4d47-8520-1514d6929daa)
+
 
 
