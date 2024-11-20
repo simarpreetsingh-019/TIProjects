@@ -1,0 +1,65 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+ENV/
+.env
+
+# Model files and saved models
+saved_model/
+*.pkl
+*.h5
+*.pth
+model.pkl
+*.joblib
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Data files
+*.csv
+*.json
+*.sqlite
+*.db
+
+# Log files
+*.log
+logs/
+tensorboard/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# VS Code settings
+.vscode/
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Specific to your project structure
+./Anomaly_Detection_Model/saved_model/*
+./Anomaly_Detection_Model/__pycache__/
+./Anomaly_Detection_Model/*/__pycache__/
+./Anomaly_Detection_Model/model.pkl
+lib64/
+bin/
+include/
+
+# Requirements (keep requirements.txt tracked)
+# requirements.txt
+
+# Configuration files that might contain sensitive info
+*.cfg
+*.conf
+config.ini
+*.env
+
+# Keep README
+!README.md
