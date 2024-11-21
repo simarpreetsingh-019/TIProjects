@@ -1,0 +1,272 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  padding-top: 50px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 250px;
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  height: 100vh; /* Full height */
+  position: fixed; /* Fixed on the left */
+  top: 0;
+  left: 0;
+}
+
+.sidebar h2 {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  color: #bce5ef;
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+.header {
+  padding-left: 250px;
+  margin: 20px 0; 
+
+}
+
+.main-content{
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.header h3 {
+  font-family: 'Patrick Hand', cursive; /* Use the same handwriting font */
+  color: #333; /* Set the color */
+}
+
+.header h3.welcome-message {
+  color: #3b5c73; /* Change to a visible color */
+  /* font-family:  Change to your preferred font */
+  font-family: 'The Seasons', sans-serif; /* Use The Seasons font */
+
+  padding-left: 10px;
+  font-size: 40px;
+}
+.header h4.fullform{
+  color: #bce5ef;
+  padding-left: 100px;
+}
+
+
+
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 20px 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none; /* Remove underline from links */
+  color: #3a91ab; /* Set link color */
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center items vertically */
+  padding: 10px; /* Add some padding for a better clickable area */
+  border-radius: 5px; /* Rounded corners for hover effect */
+  transition: background 0.3s;
+}
+
+.sidebar ul li a:hover {
+  background: rgba(0, 0, 0, 0.1); /* Change background on hover */
+  border-radius: 20px;
+}
+.sidebar ul li a span {
+  margin-right: 10px; /* Space between icon and text */
+  font-size: 24px; /* Adjust icon size */
+  line-height: 1; /* Ensure consistent vertical alignment */
+  display: inline-block; /* Ensure it behaves like an inline block */
+  vertical-align: middle; 
+}
+.sidebar ul li a span.material-symbols-outlined {
+  line-height: 1; /* Ensure line-height is set to 1 for consistency */
+}
+
+/* Main Content Container (Shifted to the right of the sidebar) */
+.container {
+  margin-left: 270px; /* Adjust for the sidebar width */
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  overflow-x: auto;
+  flex-wrap: wrap; /* Allows multiple warranty cards side by side */
+  gap: 70px; /* Space between cards */
+  white-space: nowrap;
+  /* color: #3a91ab; Set link color */
+  
+}
+
+
+/* Warranty Flip Card */
+.flip-card {
+  background-color: transparent;
+  width: calc(25% - 10px);
+  width: 250px;
+  height: 254px;
+  /* padding-right: 50px; */
+  perspective: 1000px;
+  font-family: sans-serif;
+  /* color: #3a91ab; Set link color */
+  
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  
+
+}
+
+.flip-card-front, .flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid blue;
+  border-radius: 1rem;
+}
+
+.flip-card-front {
+  background: linear-gradient(120deg, rgb(229, 246, 255) 60%, rgb(120, 208, 255) 88%, rgb(0, 147, 180) );
+  color: #3a91ab;
+
+}
+
+.flip-card-back {
+  background: linear-gradient(-120deg, rgb(229, 246, 255) 60%, rgb(120, 208, 255) 88%, rgb(0, 147, 180) );
+  color: #3a91ab;
+  transform: rotateY(180deg);
+  font-size: 10px;
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+}
+.expiring-warranties {
+  margin-top: 30px; /* Space above the expiring warranties section */
+  background-color: #ffffff; /* Light red background for distinction */
+  padding: 20px; /* Padding around the section */
+  border-radius: 8px; /* Rounded corners for the section */
+  margin-left: 270px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  height: 350px;
+}
+
+.expiring-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px; /* Space between expiring cards */
+}
+
+.expiring-card {
+  flex: 1 1 calc(33% - 15px); /* Responsive card width */
+  min-width: 200px; /* Minimum width */
+  border: 1px solid #ccc; /* Card border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 15px; /* Internal padding */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.7s; /* Animation on hover */
+}
+
+.expiring-card:hover {
+  transform: translateY(25px); /* Lift effect on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow on hover for depth */
+}
+.flip-card {
+    width: calc(25% - 10px); /* Adjust for the gap */
+    height: 254px; 
+}
+
+/* Expiring Warranty Flip Card */
+.expiring-card {
+  background-color: transparent;
+  width: calc(25% - 10px);
+  height: 254px;
+  perspective: 1000px;
+  font-family: sans-serif;
+}
+
+.expiring-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.expiring-card:hover .expiring-card-inner {
+  transform: rotateY(180deg);
+}
+
+.expiring-card-front, .expiring-card-back {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid orange; 
+  border-radius: 1rem;
+}
+
+.expiring-card-front {
+  background: linear-gradient(120deg, rgb(255, 255, 255) 60%, rgb(255, 172, 172) 88%, rgb(255, 111, 111) );
+  color: darkred; /* Change text color */
+  border-color: red;
+  border-radius: 20px;
+  border-width: 5px;
+}
+
+.expiring-card-back {
+  background: linear-gradient(-120deg, rgb(255, 255, 255) 60%, rgb(255, 172, 172) 88%, rgb(255, 111, 111) );
+
+  color: darkred; /* Change text color */
+  border-color: red;
+  border-radius: 20px;
+  border-width: 5px;
+  transform: rotateY(180deg);
+}
+

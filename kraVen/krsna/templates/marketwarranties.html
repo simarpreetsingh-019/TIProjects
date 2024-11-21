@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Device Details</title>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <style>
+    body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Patrick Hand', cursive;
+  background-color: #0B0C10; 
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  padding: 20px;
+  background: linear-gradient(135deg, #1F2833, #0B0C10);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start; 
+  box-sizing: border-box;
+  overflow-x: auto; 
+  max-width: 100vw; 
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 20px;
+  padding: 30px;
+  margin: 10px;
+  width: 300px; 
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.device-image {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.device-image img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.details {
+  flex-grow: 1;
+}
+
+.details h2 {
+  color: #66FCF1;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.details p {
+  font-size: 1.1em;
+  color: #C5C6C7;
+  margin-bottom: 10px;
+}
+
+.specs-list {
+  list-style-type: none;
+  padding-left: 0;
+  color: #45A29E;
+  font-size: 1em;
+}
+
+.specs-list li {
+  margin-bottom: 5px;
+}
+
+.billing-info {
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.billing-info p {
+  margin: 5px 0;
+  font-size: 1em;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Card 1 -->
+    <div class="card">
+      <div class="device-image">
+        <img src="https://via.placeholder.com/300x200?text=Samsung+Galaxy+S22+Ultra" alt="Samsung Galaxy S22 Ultra">
+      </div>
+      <div class="details">
+        <h2>Device 1: Samsung Galaxy S22 Ultra</h2>
+        <p>Purchased On: 12th September 2024</p>
+        <h3>Specifications:</h3>
+        <ul class="specs-list">
+          <li>Screen Size: 6.8 inches</li>
+          <li>Storage: 256GB</li>
+          <li>RAM: 12GB</li>
+          <li>Processor: Exynos 2200</li>
+          <li>Camera: Quad-camera setup (108MP Main)</li>
+          <li>Battery: 5000mAh</li>
+        </ul>
+        <div class="billing-info">
+          <h3>Billing Information:</h3>
+          <p>Order ID: #123456789</p>
+          <p>Total Amount: ₹95,999</p>
+          <p>Payment Method: Credit Card (Visa)</p>
+          <p>Billing Address: 123 Main Street, New Delhi, India</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <div class="device-image">
+        <img src="https://via.placeholder.com/300x200?text=Apple+iPhone+14+Pro" alt="Apple iPhone 14 Pro">
+      </div>
+      <div class="details">
+        <h2>Device 2: Apple iPhone 14 Pro</h2>
+        <p>Purchased On: 15th September 2024</p>
+        <h3>Specifications:</h3>
+        <ul class="specs-list">
+          <li>Screen Size: 6.1 inches</li>
+          <li>Storage: 128GB</li>
+          <li>RAM: 6GB</li>
+          <li>Processor: A16 Bionic</li>
+          <li>Camera: Triple-camera setup (48MP Main)</li>
+          <li>Battery: 3200mAh</li>
+        </ul>
+        <div class="billing-info">
+          <h3>Billing Information:</h3>
+          <p>Order ID: #987654321</p>
+          <p>Total Amount: ₹99,999</p>
+          <p>Payment Method: Debit Card (MasterCard)</p>
+          <p>Billing Address: 456 Main Street, New Delhi, India</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <div class="device-image">
+        <img src="https://via.placeholder.com/300x200?text=OnePlus+10+Pro" alt="OnePlus 10 Pro">
+      </div>
+      <div class="details">
+        <h2>Device 3: OnePlus 10 Pro</h2>
+        <p>Purchased On: 20th September 2024</p>
+        <h3>Specifications:</h3>
+        <ul class="specs-list">
+          <li>Screen Size: 6.7 inches</li>
+          <li>Storage: 256GB</li>
+          <li>RAM: 8GB</li>
+          <li>Processor: Snapdragon 8 Gen 1</li>
+          <li>Camera: Triple-camera setup (48MP Main)</li>
+          <li>Battery: 5000mAh</li>
+        </ul>
+        <div class="billing-info">
+          <h3>Billing Information:</h3>
+          <p>Order ID: #1122334455</p>
+          <p>Total Amount: ₹69,999</p>
+          <p>Payment Method: UPI Payment</p>
+          <p>Billing Address: 789 Main Street, New Delhi, India</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

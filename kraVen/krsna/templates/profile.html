@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            background: linear-gradient(to right, #1e1f26, #3c415e); /* Dark blackish-blue gradient */
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Ensures the profile-page div takes full height and width */
+        .profile-page {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%; /* Full width */
+            height: 100vh; /* Full height of the viewport */
+            padding: 30px;
+        }
+
+        /* Profile card styles */
+        .profile-card {
+            background: #2a2c35; /* Darker background */
+            border-radius: 15px;
+            padding: 30px;
+            max-width: 450px;
+            width: 100%; /* Ensure it takes the full width available */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .profile-title {
+            font-weight: 700;
+            color: #e0e0e0; /* Light gray for better readability */
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        .labels {
+            font-size: 14px;
+            color: #b3b3b3; /* Light gray text */
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .form-control {
+            border-radius: 8px;
+            padding: 12px;
+            font-size: 15px;
+            background: #333;
+            color: #e0e0e0; /* Light text */
+            border: 1px solid #444;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .form-control:focus {
+            box-shadow: 0 0 8px rgba(58, 123, 213, 0.2);
+            border-color: #3c415e;
+            background: #2e2f36;
+        }
+
+        .profile-button {
+            background: linear-gradient(to right, #3c415e, #1e1f26); /* Gradient with dark tones */
+            color: #fff;
+            font-size: 16px;
+            padding: 12px 20px;
+            border-radius: 25px;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .profile-button:hover {
+            background: linear-gradient(to right, #1e1f26, #3c415e); /* Reverse gradient */
+            transform: scale(1.05);
+        }
+
+        .profile-button:active {
+            transform: scale(0.95);
+        }
+
+        .select-read-only, .input-read-only {
+            background: #2e2f36;
+            border: none;
+            color: #b3b3b3;
+            padding: 10px;
+            font-size: 15px;
+            border-radius: 8px;
+            cursor: not-allowed;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .profile-card {
+                padding: 20px;
+            }
+
+            .profile-title {
+                font-size: 20px;
+            }
+
+            .form-control, .select-read-only, .input-read-only {
+                font-size: 14px;
+            }
+        }
+
+        .input-read-only {
+            background: #1a1b1e; /* Smooth, dark background for a professional look */
+            color: #e0e0e0; /* Light gray text for good contrast */
+            padding: 12px;
+            font-size: 15px;
+            border-radius: 8px;
+            cursor: default; /* Non-interactive cursor */
+            word-wrap: break-word;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle inner shadow for depth */
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid profile-page">
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 col-sm-8">
+                <div class="profile-card p-5">
+                    <div class="text-center mb-4">
+                        <h2 class="profile-title">Profile Settings</h2>
+                    </div>
+                    <form>
+                        
+                        <div class="form-group">
+                            <label class="labels">MetaMask Address</label>
+                            <div class="input-read-only">
+                               
+                                0xe......123
+                            </div>
+                        </div>
+                        
+                       
+                        <div class="form-group mt-3">
+                            <label class="labels">First Name</label>
+                            <input type="text" class="form-control" placeholder="Enter First Name">
+                        </div>
+                        
+                        
+                        <div class="form-group mt-3">
+                            <label class="labels">Last Name</label>
+                            <input type="text" class="form-control" placeholder="Enter Last Name">
+                        </div>
+                        
+                        
+                        <div class="form-group mt-3">
+                            <label class="labels">Gender</label>
+                            <select class="form-control">
+                                <option value="" disabled selected>Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        
+                        <div class="form-group mt-3">
+                            <label class="labels">Email Address</label>
+                            <div class="input-read-only">
+                               
+                                user@example.com
+                            </div>
+                        </div>
+                        
+                        <div class="text-center mt-5">
+                            <button type="button" class="btn profile-button">Save Changes</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

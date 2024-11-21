@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blockchain Explorer: FAQs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow-x: hidden;
+      font-family: 'Patrick Hand', cursive;
+      background-color: #0B0C10;
+    }
+
+    .container {
+      padding: 20px;
+      background: linear-gradient(135deg, #1F2833, #0B0C10); 
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      box-sizing: border-box;
+    }
+
+    .heading {
+      text-align: center;
+      color: #66FCF1; 
+      font-size: 2.5em;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+      margin-bottom: 20px;
+    }
+
+    .scrollable-section {
+      width: 100%;
+      max-width: 800px;
+      flex: 1;
+      overflow-y: auto;
+      padding-right: 20px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .faq-section {
+      margin-bottom: 20px;
+    }
+
+    .faq-item {
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 8px;
+      background-color: rgba(255,255,255,0.05);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .faq-item:hover {
+      background-color: rgba(255,255,255,0.1);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .faq-question {
+      margin: 0;
+      color: #66FCF1;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    .faq-answer {
+      margin-top: 10px;
+      color: #C5C6C7;
+      font-size: 1em;
+      line-height: 1.6;
+      display: none;
+    }
+
+    .contact-section {
+      padding: 20px;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 8px;
+      background-color: rgba(0,0,0,0.1);
+      width: 100%;
+      text-align: center;
+      margin-top: auto;
+    }
+
+    .contact-heading {
+      margin-top: 0;
+      color: #66FCF1;
+      font-size: 1.8em;
+    }
+
+    .contact-paragraph {
+      margin: 10px 0;
+      color: #C5C6C7;
+    }
+
+    .link {
+      color: #45A29E;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="heading">kraVen: FAQs</h1>
+    <div class="scrollable-section">
+      <div class="faq-section">
+        <!-- FAQs will be injected here -->
+      </div>
+      <div class="contact-section">
+        <h2 class="contact-heading">Connect with Our Network</h2>
+        <p class="contact-paragraph">Join our decentralized community for more support:</p>
+        <p class="contact-paragraph">Discord: <a href="#" class="link">Join our Discord Node</a></p>
+        <p class="contact-paragraph">Telegram: <a href="#" class="link">Connect to our Telegram Chain</a></p>
+        <p class="contact-paragraph">Email: support@blockchainexplorer.com</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const faqs = [
+      {
+        question: "What is a blockchain-based warranty system?",
+        answer: "A blockchain-based warranty system is a digital platform that utilizes blockchain technology to manage product warranties and guarantees. It automates the issuance, tracking, and claiming processes using smart contracts, ensuring transparency, security, and efficiency."
+      },
+      {
+        question: "How does the blockchain warranty system work?",
+        answer: "When a product is purchased, a smart contract is created on the blockchain that includes warranty details (serial number, purchase date, warranty duration, and terms). Customers receive a digital warranty certificate linked to their product. If a warranty claim is needed, the customer can submit it via a mobile app, where the smart contract automatically verifies and processes the claim."
+      },
+      {
+        question: "What are smart contracts?",
+        answer: "Smart contracts are self-executing contracts with the terms of the agreement directly written into code. They automate processes, such as validating warranty claims, without the need for human intervention."
+      },
+      {
+        question: "How does the system prevent fraud?",
+        answer: "The system prevents fraud through blockchain's immutability, meaning warranty details cannot be altered or deleted. This ensures that warranty claims are based on accurate and verified information, reducing the risk of fraudulent activities."
+      },
+      {
+        question: "Can I transfer my warranty to a new owner if I sell my product?",
+        answer: "Yes! The blockchain warranty system allows for easy transfer of warranties. When a product is sold, the smart contract can automatically adjust the warranty terms for the new owner, ensuring they can benefit from the remaining warranty period."
+      },
+      {
+        question: "What happens if the retailer goes out of business?",
+        answer: "The warranty details remain secure and accessible on the blockchain, even if the retailer goes out of business. This ensures that customers can still verify their warranties and make claims without relying on the retailer's continued existence."
+      },
+      {
+        question: "How do I access my warranty information?",
+        answer: "Customers can access their warranty information through a mobile app or web portal linked to their blockchain wallet. This allows for easy viewing of warranty terms, claim status, and history."
+      },
+      {
+        question: "What if I lose my digital device or access to my wallet?",
+        answer: "Most blockchain-based systems include recovery options, such as backup codes or recovery phrases, to help you regain access to your digital wallet. It's essential to follow the app's guidelines for securing your access credentials."
+      },
+      {
+        question: "Is the system compatible with all types of products?",
+        answer: "Yes, the blockchain warranty system can be adapted for various products, including electronics, appliances, automotive parts, and more. Manufacturers and retailers can customize the system to suit their specific needs."
+      },
+      {
+        question: "How does this system benefit businesses?",
+        answer: "Businesses benefit from reduced administrative costs, faster claim processing, improved customer trust, and enhanced engagement opportunities. The system streamlines warranty management, allowing businesses to focus on their core operations."
+      },
+      {
+        question: "How secure is the blockchain warranty system?",
+        answer: "Blockchain technology is inherently secure due to its decentralized and tamper-proof nature. Warranty data is stored across a distributed network, making it difficult for unauthorized parties to alter or access sensitive information."
+      },
+      {
+        question: "Are there any costs associated with implementing this system for businesses?",
+        answer: "While there may be initial setup costs for implementing the blockchain warranty system, the long-term benefits, such as reduced claim processing costs and improved customer satisfaction, can lead to significant savings."
+      }
+    ];
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const faqSection = document.querySelector('.faq-section');
+      
+      faqs.forEach((faq, index) => {
+        const faqItem = document.createElement('div');
+        faqItem.classList.add('faq-item');
+        
+        const faqQuestion = document.createElement('h3');
+        faqQuestion.classList.add('faq-question');
+        faqQuestion.textContent = faq.question;
+        
+        const faqAnswer = document.createElement('p');
+        faqAnswer.classList.add('faq-answer');
+        faqAnswer.textContent = faq.answer;
+        faqAnswer.style.display = 'none';
+        
+        faqItem.appendChild(faqQuestion);
+        faqItem.appendChild(faqAnswer);
+        
+        faqItem.addEventListener('click', () => {
+          const isVisible = faqAnswer.style.display === 'block';
+          faqAnswer.style.display = isVisible ? 'none' : 'block';
+        });
+        
+        faqSection.appendChild(faqItem);
+      });
+    });
+  </script>
+</body>
+</html>

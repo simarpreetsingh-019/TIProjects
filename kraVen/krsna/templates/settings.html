@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings</title>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow-x: hidden;
+      font-family: 'Patrick Hand', cursive;
+      background-color: #0B0C10; 
+      color: #fff;
+    }
+
+    .container {
+      padding: 20px;
+      background: linear-gradient(135deg, #1F2833, #0B0C10); 
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      text-align: center;
+      color: #66FCF1; 
+      font-size: 2.5em;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      margin-bottom: 20px;
+    }
+
+    form {
+      width: 100%;
+      max-width: 800px;
+      padding: 20px;
+      background-color: rgba(255,255,255,0.05); 
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 10px;
+    }
+
+    label {
+      display: block;
+      font-size: 1.2em;
+      margin-bottom: 10px;
+      color: #66FCF1;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 8px;
+      background-color: rgba(255,255,255,0.05);
+      color: #fff;
+    }
+
+    input[type="checkbox"] {
+      width: auto;
+      margin-right: 10px;
+    }
+
+    .checkbox-label {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: #45A29E;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 1.2em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #66FCF1;
+    }
+
+    .section-title {
+      margin-top: 20px;
+      color: #66FCF1;
+      font-size: 1.5em;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+      padding-bottom: 10px;
+    }
+
+    .contact-section {
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      margin-top: 30px;
+      background-color: rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    .link {
+      color: #45A29E;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Website Settings</h1>
+    <form action="/save-settings" method="POST">
+      
+      <h2 class="section-title">Appearance</h2>
+      <label for="theme">Choose Theme:</label>
+      <select id="theme" name="theme">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+        <option value="auto">Auto</option>
+      </select>
+
+   
+      <h2 class="section-title">Notifications</h2>
+      <div class="checkbox-label">
+        <input type="checkbox" id="email-notifications" name="email_notifications">
+        <label for="email-notifications">Enable Email Notifications</label>
+      </div>
+
+      <div class="checkbox-label">
+        <input type="checkbox" id="sms-notifications" name="sms_notifications">
+        <label for="sms-notifications">Enable SMS Notifications</label>
+      </div>
+
+     
+      <h2 class="section-title">Privacy Settings</h2>
+      <div class="checkbox-label">
+        <input type="checkbox" id="location-access" name="location_access">
+        <label for="location-access">Allow Location Access</label>
+      </div>
+
+   
+
+      <!-- Social Media Integration -->
+      <h2 class="section-title">Social Media</h2>
+      <label for="twitter-handle">Twitter Handle:</label>
+      <input type="text" id="twitter-handle" name="twitter_handle" placeholder="@YourTwitter">
+
+      <label for="facebook-link">Facebook Profile URL:</label>
+      <input type="url" id="facebook-link" name="facebook_link" placeholder="https://facebook.com/your-profile">
+
+      <label for="instagram-handle">Instagram Handle:</label>
+      <input type="text" id="instagram-handle" name="instagram_handle" placeholder="@YourInstagram">
+
+      <!-- Save Button -->
+      <button type="submit">Save Settings</button>
+    </form>
+
+    <!-- Contact Section -->
+    <div class="contact-section">
+      <h2>Connect with Our Support</h2>
+      <p>Join our community for more support:</p>
+      <p>Discord: <a href="#" class="link">Join our Discord</a></p>
+      <p>Telegram: <a href="#" class="link">Join our Telegram</a></p>
+      <p>Email: support@kraVen.com</p>
+    </div>
+  </div>
+</body>
+</html>
