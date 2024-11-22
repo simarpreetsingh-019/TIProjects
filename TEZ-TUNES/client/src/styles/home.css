@@ -1,0 +1,251 @@
+/* Base Styles */
+.bg-gray-900 {
+  background-color: #111827;
+}
+
+/* Hexagon Background Animation */
+@keyframes float {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(0, -20px) scale(1.1);
+  }
+}
+
+.absolute {
+  position: absolute;
+}
+
+.inset-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.pointer-events-none {
+  pointer-events: none;
+}
+
+.opacity-10 {
+  opacity: 0.1;
+}
+
+/* Hero Section Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.transform {
+  transform: translateY(0);
+}
+
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+.duration-1000 {
+  transition-duration: 1000ms;
+}
+
+/* Gradient Text Animation */
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.bg-clip-text {
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.text-transparent {
+  color: transparent;
+}
+
+.bg-gradient-to-r {
+  background: linear-gradient(to right, #a855f7, #ec4899);
+  background-size: 200% 200%;
+  animation: gradientFlow 3s ease infinite;
+}
+
+/* Blur Effects */
+.blur-xl {
+  filter: blur(24px);
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Button Styles */
+.from-purple-500 {
+  background-image: linear-gradient(to right, #a855f7, #ec4899);
+}
+
+.to-pink-500 {
+  background-image: linear-gradient(to right, #ec4899, #db2777);
+}
+
+.hover\:from-purple-600:hover {
+  background-image: linear-gradient(to right, #9333ea, #db2777);
+}
+
+.hover\:to-pink-600:hover {
+  background-image: linear-gradient(to right, #db2777, #be185d);
+}
+
+.hover\:scale-105:hover {
+  transform: scale(1.05);
+}
+
+/* Featured Artists Section */
+.group {
+  position: relative;
+}
+
+.group:hover .group-hover\:scale-105 {
+  transform: scale(1.05);
+}
+
+.bg-gradient-to-t {
+  background-image: linear-gradient(to top, rgba(17, 24, 39, 1), transparent);
+}
+
+/* Features Section */
+.backdrop-blur-sm {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.bg-gray-800\/50 {
+  background-color: rgba(31, 41, 55, 0.5);
+}
+
+.hover\:bg-gray-700\/50:hover {
+  background-color: rgba(55, 65, 81, 0.5);
+}
+
+/* Stats Section */
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (min-width: 768px) {
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+/* Why Us Section */
+.hover\:scale-102:hover {
+  transform: scale(1.02);
+}
+
+.border-purple-500\/20 {
+  border-color: rgba(168, 85, 247, 0.2);
+}
+
+.hover\:border-purple-500\/40:hover {
+  border-color: rgba(168, 85, 247, 0.4);
+}
+
+/* Footer */
+.bg-gray-800\/30 {
+  background-color: rgba(31, 41, 55, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .grid-cols-1 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Additional Utility Classes */
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.hover\:shadow-purple-500\/25:hover {
+  box-shadow: 0 10px 15px -3px rgba(168, 85, 247, 0.25);
+}
+
+/* Live Badge Animation */
+@keyframes pulseBadge {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.bg-purple-500 {
+  background-color: #a855f7;
+  animation: pulseBadge 2s ease-in-out infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+/* Performance Optimizations */
+.transform {
+  will-change: transform;
+}
+
+.transition-all {
+  will-change: transform, opacity;
+}
