@@ -227,7 +227,7 @@ contract PatentRegistry {
 - Exploring IPFS for decentralized patent storage.
 
 
-## **Demo Video**,
+## **Demo Video**
 Presentation and Demo: [Link](https://drive.google.com/file/d/16UD7BOXrb0V4pAs8ai9rNzlRBcY0CQXK/view?usp=drive_link)
 
 
