@@ -12,7 +12,6 @@
   - [Etherlink Deployment](#etherlink-deployment)
   - [Transaction Details](#transaction-details)
 - [Smart Contract Details](#smart-contract-details)
-  - [Smart Contract Code](#smart-contract-code)
 - [How to Run the Project](#how-to-run-the-project)
   - [Prerequisites](#prerequisites)
   - [Smart Contract Deployment](#smart-contract-deployment)
@@ -27,6 +26,8 @@
 # **Decentralized Patent Registry DApp**
 
 ## **Project Overview**
+Technology used - Etherlink Blockchain
+
 The Decentralized Patent Registry DApp is a blockchain-based platform for registering, managing, and transferring ownership of patents. This decentralized solution ensures transparency, immutability, and verifiable ownership, offering a secure way to protect intellectual property on a public blockchain. 
 
 The project leverages Etherium (or compatible EVM networks) for smart contracts and enables patent owners to register their inventions, transfer ownership, and verify patent details without relying on centralized authorities.We use **Etherlink** to deploy it on the EVM network.
