@@ -1,0 +1,7 @@
+FROM node:22-alpine
+COPY ./client /app
+WORKDIR /app
+RUN npm install && npm install react-router-dom --save
+RUN apk add --no-cache curl
+EXPOSE 5173    
+CMD ["npm","run","dev","--","--host"]
