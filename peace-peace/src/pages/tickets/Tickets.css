@@ -1,0 +1,109 @@
+.ticket-div {
+    margin: 0;
+    min-width: 100vw;
+
+    background-color: #1c1c1c;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+
+.ticket-h1 {
+    font-family: Humane-Bold, Helvetica, Arial, sans-serif;
+    font-size: 8rem;
+    text-align: center;
+    margin: 0 auto 1rem;
+}
+
+.ticket-cardlist {
+    margin: 5rem;
+    display: flex;
+    align-items: center;
+    gap: 3rem 3rem;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    justify-self: flex-end;
+}
+
+.ticket-card {
+    background-color: red;
+    margin: 0;
+    min-height: 60vh;
+    min-width: 20vw;
+    text-align: left;
+    color: #1c1c1c;
+}
+
+.card-h2 {
+    font-family: Humane-Bold, Helvetica, Arial, sans-serif;
+    font-size: 6rem;
+    margin: 0 auto 10rem;
+    padding: 1rem;
+}
+
+.card-date {
+    font-family: Humane-Bold, Helvetica, Arial, sans-serif;   
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.card-venue {
+    font-family: Humane-Bold, Helvetica, Arial, sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.card-number-tickets {
+    font-family: Humane-Bold, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.card-sold {
+    max-width: 6rem;
+}
+
+.card-sold:hover {
+    color: #bfff0a;
+    background-color: #1c1c1c;
+}
+
+.card-bottom {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-qr {
+    padding: 1rem;
+    height: 6rem;
+    width: 6rem;
+}
+
+.qr-small {
+    height: 6rem;
+    width: 6rem;
+}
+
+.bob{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    opacity: 0.9;
+    width: 100vw;
+    height: 100vh;
+}
+
+.verifyy{
+    width: 50%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
