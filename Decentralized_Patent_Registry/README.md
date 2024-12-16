@@ -19,14 +19,15 @@
   - [API Endpoints](#api-endpoints)
 - [Testing the Smart Contract](#testing-the-smart-contract)
 - [Future Improvements](#future-improvements)
-- [Contributing](#contributing)
-- [License](#license)
+- [Demo Video](#demo-video)
+- [Team Details](#team-details)
 
 ---
 # **Decentralized Patent Registry DApp**
 
 ## **Project Overview**
-Technology used - Etherlink Blockchain
+#### Contract Address - 0xe9935aa3a5fc071d1bab2897874cef8ce37a0f0a
+\- Deployed on Etherlink Blockchain(testnet)
 
 The Decentralized Patent Registry DApp is a blockchain-based platform for registering, managing, and transferring ownership of patents. This decentralized solution ensures transparency, immutability, and verifiable ownership, offering a secure way to protect intellectual property on a public blockchain. 
 
@@ -225,14 +226,21 @@ contract PatentRegistry {
 - Provide record of patent whcih dipslays the disputes which occured, this again supports the idea of degeneracy and transparency.
 - Exploring IPFS for decentralized patent storage.
 
-## **Contributing**
-Contributions are welcome! Please follow the standard [contribution guidelines](CONTRIBUTING.md) for submitting pull requests.
 
-## **License**
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+## **Demo Video**,
+Presentation and Demo: [Link](https://drive.google.com/file/d/16UD7BOXrb0V4pAs8ai9rNzlRBcY0CQXK/view?usp=drive_link)
 
 
+## **Team Details**
+### Team Name 
+- **Sudo Force**  
+  - **Akshay A**
+  - **Akshay V**
+  - **Akhshay mahesh A N**  
+  - **Vishrudh Raj R S**  
+  - **Dhasarathan A**
 
+### Hackathon Participated in:   
 
-
-
+- **Transfinitte** ([link](https://transfinitte.com/)) <br/>
+  Hosted by: The Technical Council, National Institute of Technology, Tiruchirapalli. 
