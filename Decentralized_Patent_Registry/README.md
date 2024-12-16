@@ -233,12 +233,12 @@ Presentation and Demo: [Link](https://drive.google.com/file/d/16UD7BOXrb0V4pAs8a
 
 ## **Team Details**
 ### Team Name 
-- **Sudo Force**  
-  - **Akshay A**
-  - **Akshay V**
-  - **Akhshay mahesh A N**  
-  - **Vishrudh Raj R S**  
-  - **Dhasarathan A**
+- **Power_Rangers**  
+  - **Allen Sumanth A**
+  - **Mohammed Roshan**
+  - **Adithya Nair**  
+  - **Vaaruna R**  
+  - **Thirumalaibharath R**
 
 ### Hackathon Participated in:   
 
