@@ -1,0 +1,65 @@
+{
+    "operations": {},
+    "tasks": {
+        "@taqueria/plugin-taquito.deploy.1729325739153": {
+            "task": "deploy",
+            "plugin": "@taqueria/plugin-taquito",
+            "time": 1729325739153,
+            "output": [
+                {
+                    "contract": "pokeGame.tz",
+                    "address": "KT1N2aib699k2yisUb448QpPe5tg1KsMsemp",
+                    "alias": "pokeGame"
+                }
+            ]
+        },
+        "@taqueria/plugin-taquito.deploy.1729326967690": {
+            "task": "deploy",
+            "plugin": "@taqueria/plugin-taquito",
+            "time": 1729326967690,
+            "output": [
+                {
+                    "contract": "pokeGame.tz",
+                    "address": "KT1LG2imHhuR48DgVhXEWXWQwppjAxqpEHoj",
+                    "alias": "pokeGame"
+                }
+            ]
+        },
+        "@taqueria/plugin-taquito.deploy.1729331546986": {
+            "task": "deploy",
+            "plugin": "@taqueria/plugin-taquito",
+            "time": 1729331546986,
+            "output": [
+                {
+                    "contract": "pokeGame.tz",
+                    "address": "KT1GvmijF7QhLy3ipK7Kd9M34LNxFi48fBD9",
+                    "alias": "pokeGame"
+                }
+            ]
+        },
+        "@taqueria/plugin-taquito.deploy.1729333259926": {
+            "task": "deploy",
+            "plugin": "@taqueria/plugin-taquito",
+            "time": 1729333259926,
+            "output": [
+                {
+                    "contract": "pokeGame.tz",
+                    "address": "KT1L35co3qFnJ75XvAZ9zqnQcUKAsdtKrcQN",
+                    "alias": "pokeGame"
+                }
+            ]
+        },
+        "@taqueria/plugin-taquito.deploy.1729334356418": {
+            "task": "deploy",
+            "plugin": "@taqueria/plugin-taquito",
+            "time": 1729334356418,
+            "output": [
+                {
+                    "contract": "Counter.tz",
+                    "address": "KT1DNLFAu3j7PUmq8arzyAV7diRewYxAP3bt",
+                    "alias": "Counter"
+                }
+            ]
+        }
+    }
+}
