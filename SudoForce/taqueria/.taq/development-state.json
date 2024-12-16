@@ -1,0 +1,141 @@
+{
+    "operations": {},
+    "tasks": {
+        "@taqueria/plugin-octez-client.simulate.1729323294997": {
+            "task": "simulate",
+            "plugin": "@taqueria/plugin-octez-client",
+            "time": 1729323294997,
+            "output": [
+                {
+                    "contract": "pokeGame.tz",
+                    "result": "Invalid"
+                }
+            ]
+        },
+        "@taqueria/plugin-octez-client.simulate.1729323336011": {
+            "task": "simulate",
+            "plugin": "@taqueria/plugin-octez-client",
+            "time": 1729323336011,
+            "output": [
+                {
+                    "contract": "pokeGame.tz",
+                    "result": "Invalid"
+                }
+            ]
+        },
+        "@taqueria/plugin-ligo.compile.1729332993495": {
+            "task": "compile",
+            "plugin": "@taqueria/plugin-ligo",
+            "time": 1729332993495,
+            "output": [
+                {
+                    "source": "pokeGame.jsligo",
+                    "artifact": "artifacts/pokeGame.tz\ndefault_storage in pokeGame.storageList.jsligo not compiled\nartifacts/pokeGame.parameter.default_parameter.tz"
+                }
+            ]
+        },
+        "@taqueria/plugin-ligo.compile.1729333016994": {
+            "task": "compile",
+            "plugin": "@taqueria/plugin-ligo",
+            "time": 1729333016994,
+            "output": [
+                {
+                    "source": "pokeGame.jsligo",
+                    "artifact": "No contract modules found in \"pokeGame.jsligo\".\nIf your contract is defined within a namespace, please ensure that it is exported from the contract file.\""
+                }
+            ]
+        },
+        "@taqueria/plugin-ligo.compile.1729333027257": {
+            "task": "compile",
+            "plugin": "@taqueria/plugin-ligo",
+            "time": 1729333027257,
+            "output": [
+                {
+                    "source": "pokeGame.jsligo",
+                    "artifact": "artifacts/pokeGame.tz\nartifacts/pokeGame.default_storage.tz\nartifacts/pokeGame.parameter.default_parameter.tz"
+                }
+            ]
+        },
+        "@taqueria/plugin-ligo.compile.1729333039700": {
+            "task": "compile",
+            "plugin": "@taqueria/plugin-ligo",
+            "time": 1729333039700,
+            "output": [
+                {
+                    "source": "pokeGame.jsligo",
+                    "artifact": "artifacts/pokeGame.tz\ndefault_storage in pokeGame.storageList.jsligo not compiled\nartifacts/pokeGame.parameter.default_parameter.tz"
+                }
+            ]
+        },
+        "@taqueria/plugin-ligo.compile.1729334243828": {
+            "task": "compile",
+            "plugin": "@taqueria/plugin-ligo",
+            "time": 1729334243828,
+            "output": [
+                {
+                    "source": "Counter.mligo/Counter",
+                    "artifact": "artifacts/Counter.tz\nartifacts/Counter.storage.initial_count.tz\nartifacts/Counter.storage.another_count.tz\nartifacts/Counter.parameter.increment_by_3.tz"
+                }
+            ]
+        },
+        "@taqueria/plugin-flextesa.list accounts.1729334790555": {
+            "task": "list accounts",
+            "plugin": "@taqueria/plugin-flextesa",
+            "time": 1729334790555,
+            "output": [
+                {
+                    "account": "bob",
+                    "balance": "30 ꜩ",
+                    "address": "tz1aSkwEot3L2kmUvcoxzjMomb9mvBNuzFK6"
+                },
+                {
+                    "account": "alice",
+                    "balance": "30 ꜩ",
+                    "address": "tz1VSUr8wwNhLAzempoch5d6hLRiTh8Cjcjb"
+                },
+                {
+                    "account": "john",
+                    "balance": "30 ꜩ",
+                    "address": "tz1Zwoh1QCVAvJ4sVTojMp9pLYp6Ji4NoZy6"
+                },
+                {
+                    "account": "jane",
+                    "balance": "30 ꜩ",
+                    "address": "tz1aHUAC4oviwJuZF1EvVSvFz7cu9KMNYBph"
+                },
+                {
+                    "account": "joe",
+                    "balance": "30 ꜩ",
+                    "address": "tz1MVGjgD1YtAPwohsSfk8i3ZiT1yEGM2YXB"
+                }
+            ]
+        },
+        "@taqueria/plugin-taquito.deploy.1729334821181": {
+            "task": "deploy",
+            "plugin": "@taqueria/plugin-taquito",
+            "time": 1729334821181,
+            "output": [
+                {
+                    "contract": "Counter.tz",
+                    "address": "KT1C9AbVhVsejTWgTo2NpGCbTLiwzrXqw7Lh",
+                    "alias": "Counter"
+                }
+            ]
+        },
+        "@taqueria/plugin-taquito.transfer.1729335040130": {
+            "task": "transfer",
+            "plugin": "@taqueria/plugin-taquito",
+            "time": 1729335040130,
+            "output": [
+                {
+                    "contractAlias": "Counter",
+                    "contractAddress": "KT1C9AbVhVsejTWgTo2NpGCbTLiwzrXqw7Lh",
+                    "parameter": "(Right (Right 3))\n\n",
+                    "entrypoint": "default",
+                    "mutezTransfer": "0",
+                    "destination": "http://localhost:20000"
+                }
+            ]
+        }
+    }
+}

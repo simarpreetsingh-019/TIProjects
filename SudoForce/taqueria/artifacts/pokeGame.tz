@@ -1,0 +1,11 @@
+{ parameter unit ;
+  storage (set address) ;
+  code { CDR ;
+         SOURCE ;
+         SWAP ;
+         PUSH bool True ;
+         DIG 2 ;
+         UPDATE ;
+         NIL operation ;
+         PAIR } }
+
