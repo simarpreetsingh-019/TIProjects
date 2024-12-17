@@ -2,11 +2,17 @@
 
 
 ## Overview
-
+#### Contract address: 0x4aa8863dd0c93793b2925b7f9c72700fbc1e11ac
+\- Deployed on Etherlink Blockchain(testnet)
 SecureVault is a blockchain-based solution leveraging **Zero-Knowledge Proofs (ZKPs)** for secure and privacy-preserving data verification. The primary focus of the project is to enable third-party applications to access user-specific data fields without compromising their privacy, all while ensuring trust and transparency using blockchain technology.
 
 Our project integrates **IPFS**, **Zokrates**, and **smart contracts** to create a secure system for validating age requirements (as a proof of concept). This foundation can be extended to other fields like education, employment, or financial status.
 
+---
+## Demo Videos
+
+- **Data Verification**: [View on Google Drive](https://drive.google.com/drive/folders/1Q4yLtJnJHk_VBONQqyiqAl56xWQqctKj?usp=sharing)
+- **Document Upload**: [View on Google Drive](https://drive.google.com/file/d/1QmkNkeKfdkraaHU1BjChahaaBZjJmVy-/view?usp=sharing)
 ---
 
 ## Key Features
@@ -83,7 +89,7 @@ Our long-term goal is to develop **SecureVault API Generator**, enabling third-p
 
 - **IPFS**: Decentralized storage for user data.  
 - **Zokrates**: ZKP generation and validation.  
-- **Smart Contracts**: Blockchain-based proof validation and access management.  
-- **Frontend**: User-friendly interface for entering CID and verification details (React JS) .
+- **Smart Contracts**: Blockchain-based proof validation and access management.
+- **Solidity**: Smart contracts written in Solidity.
+- **Frontend**: User-friendly interface for entering CID and verification details and document upload .
 - **Backend**: API handling, data retrieval, and ZKP integration.
-
