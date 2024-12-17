@@ -12,8 +12,7 @@ const authMiddleware = require('./middleware/auth');
 const pinFileToIPFS = require('./pinata-api-starter/pinJSONToIPFS');
 const app = express();
 const port = 5000;
-const MONGODB_URI="mongodb+srv://bcapp:U3V_U27WU*CEcr3@cluster.gcx2p.mongodb.net/?retryWrites=true&w=majority&appName=Cluster"
-const JWT_SECRET="ae2545df4c3e29ae12ace301a2dca03f51de207fc6b7d6bbe1d4cc77763fe46be282803ce54202569eae1b75e9e48d09160374d87506f0e5f39df2cd54e1a40e"
+const JWT_SECRET = "ae2545df4c3e29ae12ace301a2dca03f51de207fc6b7d6bbe1d4cc77763fe46be282803ce54202569eae1b75e9e48d09160374d87506f0e5f39df2cd54e1a40e"
 dotenv.config();
 function calculateAge(birthDateString) {
     // Split the date string into day, month, year
@@ -69,7 +68,7 @@ const upload = multer({ storage: storage });
 const FormData = require('form-data');
 
 // Endpoint to handle file upload
-app.post('/upload',authMiddleware,upload.single('file'), async (req, res) => {
+app.post('/upload', authMiddleware, upload.single('file'), async (req, res) => {
     try {
         if (!req.file) {
             console.error('No file uploaded');
@@ -95,27 +94,27 @@ app.post('/upload',authMiddleware,upload.single('file'), async (req, res) => {
                 ...form.getHeaders() // Include the form headers
             }
         });
-        
+
         const { cleaned_text, name, dob } = response.data;
         //console.log('Response from Flask:', response.data);
-        age=calculateAge(dob);
+        age = calculateAge(dob);
         console.log(age);
-        pinataContent={
-            name:name,
-            dob:age
+        pinataContent = {
+            name: name,
+            dob: age
         }
-        const value=await pinFileToIPFS(pinataContent);
-        console.log("User:",req.user);
+        const value = await pinFileToIPFS(pinataContent);
+        console.log("User:", req.user);
         // Send the processed data back to the client
         const userId = req.user.username; // Assuming you have the user ID from the auth middleware
         //console.log("Value:",value);
         //console.log("User id:",userId);
-        
+
         const query = 'UPDATE users SET cid = $1 WHERE username = $2';
         await pool.query(query, [value, userId]);
         console.log("Done");
-        res.json({ cleaned_text, name,dob });
-        
+        res.json({ cleaned_text, name, dob });
+
     } catch (error) {
         console.error('Error processing file:', error);
         res.status(500).send('Error processing file');
