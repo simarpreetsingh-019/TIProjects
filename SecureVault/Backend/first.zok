@@ -1,0 +1,6 @@
+def main(private field age) -> (field) {
+    field legal_age = 18;
+    return if age >= legal_age then 1 else 0 fi;
+}
+
+
