@@ -1,0 +1,11 @@
+
+Command: shopt -s histappend
+Output:
+
+Exit Code: 0
+----
+Command: git pull
+Output:
+Already up to date.
+Exit Code: 0
+----
