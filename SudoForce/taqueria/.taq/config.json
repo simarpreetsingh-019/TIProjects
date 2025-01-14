@@ -1,0 +1,73 @@
+{
+    "version": "v2",
+    "language": "en",
+    "artifactsDir": "artifacts",
+    "contractsDir": "contracts",
+    "accounts": {
+        "bob": {
+            "balance": {
+                "amount": "30_000_000",
+                "units": "mutez"
+            }
+        },
+        "alice": {
+            "balance": {
+                "amount": "30_000_000",
+                "units": "mutez"
+            }
+        },
+        "john": {
+            "balance": {
+                "amount": "30_000_000",
+                "units": "mutez"
+            }
+        },
+        "jane": {
+            "balance": {
+                "amount": "30_000_000",
+                "units": "mutez"
+            }
+        },
+        "joe": {
+            "balance": {
+                "amount": "30_000_000",
+                "units": "mutez"
+            }
+        }
+    },
+    "environmentDefault": "development",
+    "environments": {
+        "development": {
+            "type": "flextesa",
+            "label": "Local Tezos Sandbox"
+        },
+        "testing": {
+            "type": "simple",
+            "label": "ghostnet",
+            "rpcUrl": "https://ghostnet.ecadinfra.com"
+        },
+        "production": {
+            "type": "simple",
+            "label": "mainnet",
+            "rpcUrl": "https://mainnet.api.tez.ie"
+        }
+    },
+    "plugins": [
+        {
+            "type": "npm",
+            "name": "@taqueria/plugin-ligo"
+        },
+        {
+            "type": "npm",
+            "name": "@taqueria/plugin-taquito"
+        },
+        {
+            "type": "npm",
+            "name": "@taqueria/plugin-octez-client"
+        },
+        {
+            "type": "npm",
+            "name": "@taqueria/plugin-flextesa"
+        }
+    ]
+}
