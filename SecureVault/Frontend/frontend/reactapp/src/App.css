@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, sans-serif;
+  /* background-color:#0E21A0; */
+  background-image: url("../public/Untitled\ design.png");
+  /* background:linear-gradient(10deg, #35155D, #201658); */
+  padding:0;margin: 0;
+  height:100vh;
+  position: relative; /* Position relative for absolute positioning of the child */
+}
+#root{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#outer{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  overflow: hidden;
+}
+/* Main container */
+div {
+  max-width: 600px;
+  margin: 0 auto; /* Center the container */
+  padding: 20px;
+  background-color: #8EAC50;
+  background-color:rgb(156, 128, 117);
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px #3f4555;
+}
+#outermost{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+#inner{
+  max-width:440px;
+  max-height:30vh;
+  overflow-y: auto;
+}
+/* Heading styles */
+h1 {
+  color: #17594A;
+  text-align: center; /* Center align */
+}
+
+h2 {
+  color: #050c0a;
+}
+
+h3 {
+  color: #140505;
+}
+
+/* Input styles */
+input[type="file"] {
+  display: block;
+  width: 80%;
+  margin: 20px auto; /* Center the input */
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Button styles */
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #17594A; /* Green */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.5s ease,color-;
+}
+
+
+button:hover {
+  background-color: #040606;
+  color: white; 
+}
+
+/* Error message styles */
+.error {
+  color: red;
+  font-weight: bold;
+  text-align: center; /* Center align */
+}
+form{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap:5px;
+}
+/* Extracted data styles */
+pre {
+  background-color: rgb(156, 128, 117);
+  border: 1px solid #ddd;
+  padding: 10px;
+  overflow: auto; /* Add scroll if text overflows */
+  color:white;
+}
+::-webkit-scrollbar-thumb {
+  background: #f4f3f3; /* Color of the scrollbar thumb (the draggable part) */
+  border-radius: 10px; /* Optional: rounded corners for the thumb */
+}
+input{
+  background-color: #ddd;
+  height:20px;
+  border: none;
+}
+#logo{
+  position:relative;
+  top:0px;
+  margin:auto;
+  width:50px;
+  height:50px;
+}

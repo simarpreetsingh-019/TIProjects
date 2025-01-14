@@ -1,0 +1,6 @@
+def main(field age) -> field {
+    // Check if age is greater than 18
+    field isAdult = if (age > 18) { 1 } else { 0 };
+
+    return isAdult; // Return 1 if adult, 0 otherwise
+}
