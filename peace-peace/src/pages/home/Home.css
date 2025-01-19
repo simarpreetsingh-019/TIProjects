@@ -1,0 +1,28 @@
+.home-div {
+    margin: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+
+    background-color: #5546ff;
+
+    display: flex;
+    align-items: center;
+    justify-content: top;
+    flex-flow: column nowrap;
+    gap: 5rem;
+}
+
+.home-h1 {
+    font-family: Humane-Bold, Helvetica, Arial, sans-serif;
+    font-size: 28rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.home-p {
+    margin: 0;
+    max-width: 60vw;
+    font-size: 1.5rem;
+    position: relative;
+    bottom: 9rem;
+}

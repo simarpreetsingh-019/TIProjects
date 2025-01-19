@@ -1,0 +1,102 @@
+.admin-div {
+    margin: 0;
+    min-width: 100vw;
+    background-color: #1c1c1c;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+
+.admin-h1 {
+    font-family: Humane-Bold, Helvetica, Arial, sans-serif;
+    font-size: 8rem;
+    text-align: center;
+    margin: 0 auto 1rem;
+}
+
+.admin-cardlist {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;
+    flex-flow: row nowrap;
+}
+
+.admin-left {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-flow: column nowrap;
+    color: #5546ff;
+}
+
+.admin-contract {
+    font-family: Humane-Bold, Helvetica, Arial, sans-serif;
+    font-size: 5rem;
+    text-align: left;
+}
+
+.admin-contract:hover {
+    color: #bfff0a;
+    text-decoration: underline;
+}
+
+.admin-form {
+    background-color: #bfff0a;
+    color: #1c1c1c;
+    font-weight: 600;
+    font-size: 3.5rem;
+    padding: 2rem 3rem 0.5rem;
+    font-family: Humane-Bold, Helvetica, Arial, sans-serif;
+    line-height: 0.6;
+}
+
+.form-main {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    flex-flow: row nowrap;
+    text-align: left;
+}
+
+.admin-form label {
+    margin: 0;
+}
+
+.admin-form input {
+    margin: 1rem 0rem 2rem;
+    font-family: Inter, Helvetica, Arial, sans-serif;
+    background-color: #1c1c1c;
+    color: #ffffff;
+    font-size: 1rem;
+    border: 1.5px solid #1c1c1c;
+    border-radius: 30px;
+    padding: 0.5rem 1rem;
+    width: 10rem;
+}
+
+.admin-form .submit-btn {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    font-family: Humane-Bold, Helvetica, Arial, sans-serif;
+    font-size: 5rem;
+    color: #fc7eff;
+    padding: 0;
+}
+
+.admin-form .submit-btn:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.admin-form input:focus {
+    outline: none;
+}

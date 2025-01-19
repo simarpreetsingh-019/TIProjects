@@ -1,0 +1,11 @@
+.ticket-div {
+    margin: 0;
+    min-width: 100vw;
+
+    background-color: #1c1c1c;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+}

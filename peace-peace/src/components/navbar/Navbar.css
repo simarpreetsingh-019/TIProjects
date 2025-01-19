@@ -1,0 +1,113 @@
+.navbar-root {
+    margin: 0;
+    min-width: 100vw;
+
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-logo {
+    margin: 0;
+    padding: 1rem 2rem;
+    font-family: Humane-Bold, Helvetica, Arial, sans-serif;
+    font-size: 4.5rem;
+    color: #fc7eff;
+    cursor: pointer;
+}
+
+.navbar-wallet {
+    margin: 0;
+    padding: 0 2rem;
+    display: flex;
+    place-items: center;
+}
+
+.navbar-wallet button {
+    margin: 0 0 0 1rem;
+    padding: 0.75rem 1rem;
+    position: relative;
+    bottom: 0.75rem;
+
+    font-family: Inter, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    background-color: transparent;
+    color: #fc7eff;
+    border: 1.5px solid #fc7eff;
+    border-radius: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 15rem;
+}
+
+.navbar-wallet button:hover {
+    background-color: #fc7eff;
+    color: #ffffff;
+}
+
+.connect-button {
+    transition-property: background-color, font-size, transform, color;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+}
+
+.disconnect-button {
+    padding: 0;
+    transition-property: background-color, font-size, transform, color;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+}
+
+.navbar-wrap {
+    content: "";
+    position: absolute;
+    top: 0%;
+    right: 50%;
+    transform: translate(50%, 0%);
+    width: 30rem;
+    height: 25rem;
+    background-color: #b3ec14;
+    border-radius: 0 0 20px 20px;
+    transition-property: background-color, font-size, transform, color top left right bottom;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+}
+
+.navbar-bottom {
+    cursor: pointer;
+    position: relative;
+    background-color: #b3ec14;
+    width: 6rem;
+    height: 2rem;
+    bottom: 0%;
+    left: 0%;
+    transform: translate(200%, 1250%);
+    border-radius: 0 0 20px 20px;
+}
+
+.navbar-wrap-toggle {
+    transform: translate(50%, -100%);
+}
+
+.navbar-menu {
+    height: 60%;
+    padding: 2rem 4rem 1rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    font-family: Inter, Helvetica, Arial, sans-serif;
+    font-size: 1.4rem;
+    color: black;
+    gap: 1rem;
+}
+
+.navbar-menu > div {
+    width: 100%;
+    text-align: left;
+    border-bottom: black 2px solid;
+    cursor: pointer;
+}
