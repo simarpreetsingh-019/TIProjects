@@ -1,6 +1,6 @@
 // Initialize NFT.Storage client with your API token
 import { PinataSDK } from "pinata-web3";
-
+// FEW CHANGES HERE
 export const pinata = new PinataSDK({
   pinataJwt: "your_api_key_here",
   pinataGateway: "https://gateway.pinata.cloud/ipfs",
