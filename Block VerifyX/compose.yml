@@ -1,0 +1,16 @@
+name: tezos
+services:
+
+  frontend:
+    build: 
+      context: .
+      dockerfile: ./frontend_Dockerfile
+    ports:
+      - "9900:5173"
+  backend:
+    build: 
+      context: .
+      dockerfile: ./backend_Dockerfile
+    ports:
+      - "3001:3000"
+
