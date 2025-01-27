@@ -1,0 +1,12 @@
+{
+  "inputs": [
+    {
+      "name": "age",
+      "public": true,
+      "type": "field"
+    }
+  ],
+  "output": {
+    "type": "field"
+  }
+}
