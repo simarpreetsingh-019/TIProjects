@@ -1,6 +1,6 @@
 # Tezos Open-Source Contribution Incentive dApp
 
-A decentralized application (dApp) built on the Tezos blockchain using Etherlink for seamless Solidity smart contract integration. This project automates payments for GitHub contributors to foster a more engaged open-source ecosystem through blockchain-based rewards.
+[Gitfund](gitcommit-nine.vercel.app/) : A decentralized application (dApp) built on the Tezos blockchain using Etherlink for seamless Solidity smart contract integration. This project automates payments for GitHub contributors to foster a more engaged open-source ecosystem through blockchain-based rewards.
 
 ## Problem Statement
 
