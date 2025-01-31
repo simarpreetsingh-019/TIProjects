@@ -1,0 +1,171 @@
+.book-div {
+    margin: 0;
+    min-width: 100vw;
+
+    background-color: #1c1c1c;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+
+.book-h1 {
+    font-family: Humane-Bold, Helvetica, Arial, sans-serif;
+    font-size: 8rem;
+    text-align: center;
+    margin: 0 auto 1rem;
+}
+
+.book-cardlist {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row nowrap;
+    justify-self: flex-end;
+}
+
+.book-card {
+    background-size: 65%;
+    background-image: url(../../assets/Coldplay.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    margin: 0;
+    min-height: 60vh;
+    min-width: 33.3vw;
+    text-align: left;
+    color: #1c1c1c;
+}
+
+.card1 {
+    background-color: #bfff0a;
+}
+
+.card2 {
+    background-color: #5546ff;
+}
+
+.card3 {
+    background-color: #ff7bca;
+}
+
+.card-h2 {
+    font-family: Humane-Bold, Helvetica, Arial, sans-serif;
+    font-size: 6rem;
+    margin: 0 auto 8rem;
+    padding: 1rem;
+}
+
+.card-date {
+    font-weight: 600;
+    font-size: 1.25rem;
+    padding: 0 1rem;
+    font-family: Inter;
+}
+
+.card-venue > p {
+    cursor: pointer;
+    margin: 1rem 0;
+    padding: 0 1rem;
+    font-size: 4rem;
+    text-decoration: underline;
+}
+
+.card-venue > p:hover {
+    color: #ffffff;
+}
+
+.card-sold {
+    margin: 1rem 0 0 1rem;
+    padding: 0.4rem 0.6rem;
+    font-weight: 500;
+    font-size: 0.8rem;
+    background-color: transparent;
+    color: #1c1c1c;
+    border: 1.5px solid #1c1c1c;
+    border-radius: 30px;
+    max-width: 4.5rem;
+    text-align: center;
+}
+
+.buypopup{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    opacity: 0.9;
+    width: 100vw;
+    height: 100vh;
+}
+
+.buybody{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bblabel{
+    font-size: 1.3rem;
+    margin: 1rem;
+}
+
+.bbinput{
+    border: white 2px solid;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.bbx{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.bbb{
+    margin-top: 3rem;
+    width: 10rem;
+    height: 4rem;
+    font-family: Humane-Bold, Helvetica, Arial, sans-serif;
+    font-size: 4rem;
+    color: white;
+    background: linear-gradient(90deg, #b3ec14, #5546ff, #fc7eff);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.bbb:hover {
+    color: transparent;
+    transition: 500ms ease;
+}
+
+.wrap1{
+    width: 80vw;
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.err{
+    color: red;
+    width: 40%;
+    font-size: 0.7rem;
+    margin-top: 1rem;
+}
+
+.wrap2{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-flow: column wrap;
+}
