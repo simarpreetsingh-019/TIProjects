@@ -1,0 +1,104 @@
+/* src/index.css */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #1a1a1a; /* Darker background for better contrast */
+  color: #ffffff; /* White text */
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Center vertically */
+}
+
+.container {
+  width: 350px; /* Slightly wider container */
+  text-align: center; /* Center text */
+}
+
+h1 {
+  color: #eaeaea; /* Light gray for headers */
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 10px; /* Spacing below the heading */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Add shadow to the heading */
+}
+
+h2 {
+  color: #d1d1d1; /* Slightly darker shade for subtitle */
+  text-align: center;
+  font-size: 22px;
+  margin-top: 3px;
+  margin-bottom: 15px; /* Spacing below h2 */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Shadow for subtitle */
+}
+
+.box {
+  background-color: rgba(255, 255, 255, 0.15); /* Semi-transparent white for a sleek look */
+  justify-content: center;
+  align-items: center;
+  height: 400px; /* Height for better spacing */
+  width: 350px; /* Match container width */
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Soft white border */
+  border-radius: 10px; /* Increased border-radius for a softer look */
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.7); /* Deeper shadow for depth */
+  padding: 20px; /* Add padding inside the box */
+  transition: transform 0.3s ease; /* Smooth transition for scaling effect */
+}
+
+.box:hover {
+  transform: scale(1.05); /* Scale up the box on hover */
+}
+
+input {
+  padding: 12px; /* Increased padding for a better look */
+  margin: 10px 0;
+  width: 90%; /* Slightly wider input */
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Soft border */
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2); /* Lightly tinted input background */
+  color: #ffffff; /* White text for inputs */
+  transition: border-color 0.3s ease, background-color 0.3s ease; /* Smooth transition for border and background */
+}
+
+input:focus {
+  outline: none;
+  border-width: 2px; /* Remove default outline */
+  border-color: #d1e2d5; /* Green border on focus */
+  background-color: rgba(255, 255, 255, 0.25); /* Darker background on focus */
+}
+
+button {
+  background-color: #08c835; /* Bright green button */
+  color: white;
+  padding: 12px; /* Increased padding for comfort */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 90%; /* Match input width */
+  margin-left: auto;
+  margin-right: auto; /* Center the button */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Add transition effects */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for button */
+}
+
+button:hover {
+  background-color: #06a629; /* Darker green on hover */
+  transform: translateY(-3px); /* Lift effect on hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); /* Enhance shadow on hover */
+}
+
+p {
+  font-size: 1.2rem;
+  margin-top: 15px; /* Add spacing above paragraph */
+  color: #eaeaea; /* Light gray for paragraph text */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Shadow for paragraph */
+}

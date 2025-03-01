@@ -1,0 +1,3 @@
+[submodule "backend/SecureVault/Frontend/backend/pinata-api-starter"]
+	path = backend/SecureVault/Frontend/backend/pinata-api-starter
+	url = https://github.com/Shady0221M/pinata-api-starter
