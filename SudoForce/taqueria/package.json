@@ -1,0 +1,18 @@
+{
+  "name": "taqueria",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@taqueria/plugin-flextesa": "^0.56.0",
+    "@taqueria/plugin-ligo": "^0.56.0",
+    "@taqueria/plugin-octez-client": "^0.56.0",
+    "@taqueria/plugin-taquito": "^0.56.0"
+  }
+}

@@ -1,0 +1,18 @@
+{
+    "contracts": {
+        "pokeGame": {
+            "address": "KT1L35co3qFnJ75XvAZ9zqnQcUKAsdtKrcQN"
+        },
+        "Counter": {
+            "address": "KT1DNLFAu3j7PUmq8arzyAV7diRewYxAP3bt"
+        }
+    },
+    "networkName": "ghostnet",
+    "accounts": {
+        "taqOperatorAccount": {
+            "publicKey": "edpkvGfYw3LyB1UcCahKQk4rF2tvbMUk8GFiTuMjL75uGXrpvKXhjn",
+            "publicKeyHash": "tz1VSUr8wwNhLAzempoch5d6hLRiTh8Cjcjb",
+            "privateKey": "edsk3QoqBuvdamxouPhin7swCvkQNgq4jP5KZPbwWNnwdZpSpJiEbq"
+        }
+    }
+}
